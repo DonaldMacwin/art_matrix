@@ -1,3 +1,13 @@
+## Node
+node_modules/
+
+# Firebase admin service account (don't commit private keys)
+src/serviceAccountKey.json
+public/art-matrix-firebase-adminsdk-*.json
+
+# build / vite
+dist/
+.vite/
 # Logs
 logs
 *.log
@@ -22,3 +32,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+img_files/

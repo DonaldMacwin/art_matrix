@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase'
+import { ROW_LABELS, COL_LABELS } from '../common/labels'
+import '../css/App.css'
 
 type DetailData = {
   title?: string
@@ -23,6 +25,17 @@ export default function DetailPage({ id, onBack }: Props) {
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [snapshotExists, setSnapshotExists] = useState<boolean | null>(null)
 
+  // id から親セル位置を取得して、行見出し＋列見出しを返す（存在しない場合は id をそのまま返す）
+  const getParentLabelFromId = (rawId: string) => {
+    const m = rawId.match(/^R(\d+)C(\d+)/i)
+    if (!m) return rawId
+    const r = Number(m[1])
+    const c = Number(m[2])
+    const rowLabel = ROW_LABELS[r - 1] ?? `R${r}`
+    const colLabel = COL_LABELS[c - 1] ?? `C${c}`
+    return `${rowLabel} ／ ${colLabel}`
+  }
+
   // 表示中は下層ページのスクロールを無効にする（モーダル効果）
   useEffect(() => {
     const prev = document.body.style.overflow
@@ -30,23 +43,21 @@ export default function DetailPage({ id, onBack }: Props) {
     return () => { document.body.style.overflow = prev }
   }, [])
 
+  // firebaseからデータ取得
   useEffect(() => {
     let mounted = true
     const fetchData = async () => {
       setLoading(true)
       setNotFound(false)
       try {
-        console.log('[DetailPage] fetching id=', id)
         setErrorMessage(null)
         const ref = doc(db, 'details', id)
         const snap = await getDoc(ref)
-        console.log('[DetailPage] got snapshot:', snap)
         if (!mounted) return
         const exists = snap.exists()
         setSnapshotExists(exists)
         if (exists) {
           const d = snap.data() as DetailData
-          console.log('[DetailPage] document data:', d)
           setData(d)
           setNotFound(false)
         } else {
@@ -68,20 +79,7 @@ export default function DetailPage({ id, onBack }: Props) {
   }, [id])
 
   return (
-    <div style={{
-      width: '100vw',
-      //maxWidth: '1200px',
-      height: '100vh',
-      //maxHeight: '900px',
-      background: '#fff',
-      boxSizing: 'border-box',
-      padding: '16px',
-      //borderRadius: '8px',
-      overflow: 'hidden', // 外側はスクロールを持たせない
-      boxShadow: '0 8px 24px rgba(0,0,0,0.12)'
-    }}>
-
-
+    <div className="detail-container">
 
       {loading ? (
         <p>読み込み中…</p>
@@ -95,48 +93,53 @@ export default function DetailPage({ id, onBack }: Props) {
               <div style={{ marginTop: 6 }}><strong>error:</strong> {errorMessage ?? 'なし'}</div>
             </div>
           </details>
+          <div style={{ marginTop: 12 }}>
+            <button
+              className="neumorph-btn detail-back-button"
+              onClick={onBack}
+              aria-label="戻る"
+            >
+              &larr; 戻る
+            </button>
+          </div>
         </div>
       ) : data ? (
-        <div style={{}}>
-          {/* 全体の高さを埋めるようにして、右カラム内で下部にボタンを固定 */}
-          <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch', height: 'calc(100% - 0px)' }}>
-            <div style={{ flex: 1, minWidth: 240, display: 'flex', justifyContent: 'center' }}>
-              <div style={{ width: '100%', maxHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+        <div>
+          <div className="detail-main">
+            <div className="detail-left">
+              <div className="detail-image-wrapper">
                 {data.imageUrl ? (
                   <img
                     src={data.imageUrl}
                     alt={data.title || '作品画像'}
-                    style={{
-                      maxWidth: '100%',
-                      maxHeight: '90vh',
-                      width: 'auto',
-                      height: 'auto',
-                      objectFit: 'contain',
-                    }}
+                    className="detail-image"
                   />
                 ) : null}
               </div>
             </div>
 
-            {/* 右カラム：縦方向に並べ、説明領域はスクロール可能、ボタンは下へ押し出す */}
-            <div style={{ flex: 1, minWidth: 240, display: 'flex', flexDirection: 'column' }}>
-              <div style={{ padding: '12px', borderRadius: 6, display: 'flex', flexDirection: 'column', height: '100%' }}>
+            <div className="detail-right">
+              <div className="detail-right-inner">
                 <div>
-                  <p>選択されたマス： <strong>{id}</strong></p>
-                  <h3 style={{ marginTop: 0 }}>{data.title ?? 'タイトルなし'}</h3>
-                  <div style={{ color: '#555', marginBottom: 8 }}>
-                    <strong>作家：</strong>{data.author ?? '不明'} / <strong>年：</strong>{data.year ?? '不明'}
+                  <p className="detail-category">カテゴリ：{getParentLabelFromId(id)}</p>
+                  <h3 className="detail-title">{data.title ?? '無題'}</h3>
+                  <div className="detail-meta">
+                    {data.author ?? '作者不詳'} ({data.year ?? '不明'}年)
                   </div>
                 </div>
 
-                {/* テキスト部をスクロール可能にして高さを可変にする */}
-                <div style={{ marginTop: 8, whiteSpace: 'pre-wrap', color: '#333', textAlign: 'left', overflowY: 'auto' }}>
+                <div className="detail-description">
                   {data.description ?? '説明はありません。'}
                 </div>
 
-                {/* ボタンを常に右カラムの最下部に配置するために marginTop:auto を利用 */}
-                <div style={{ marginTop: 'auto', paddingTop: 12 }}>
-                  <button onClick={onBack} style={{ marginBottom: 0 }}>&larr; 戻る</button>
+                <div className="detail-back-wrap">
+                  <button
+                    className="neumorph-btn detail-back-button"
+                    onClick={onBack}
+                    aria-label="戻る"
+                  >
+                    &larr; 戻る
+                  </button>
                 </div>
               </div>
             </div>

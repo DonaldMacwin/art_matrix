@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ModalGrid from './ModalGrid'
+import { ROW_LABELS, COL_LABELS } from '../common/labels'
 
 type Props = {
   onNavigateToDetail: (id: string, goBack?: () => void) => void
@@ -7,44 +8,6 @@ type Props = {
 
 const ROWS = 18
 const COLS = 14
-
-const COL_LABELS = [
-  '崇高',
-  '華麗',
-  '優美',
-  '闊達',
-  '巧妙趣向',
-  '滑稽愉快',
-  '軽妙洒脱',
-  '枯淡・侘び寂び',
-  '懐郷',
-  '幽玄',
-  '憐憫',
-  '侮蔑',
-  '悲壮',
-  '醜悪',
-]
-
-const ROW_LABELS = [
-  '平面造形-絵画美術',
-  '平面造形-映像美術',
-  '平面造形-写真美術',
-  '平面造形-文字美術・書道',
-  '立体造形-立体美術',
-  '立体造形-建築',
-  '立体造形-室内装飾',
-  '立体造形-被服',
-  '立体造形-工芸',
-  '文学-文芸',
-  '文学-詩歌',
-  '文学-文芸',
-  '音楽',
-  '料理-調理技法',
-  '料理-作法',
-  '舞台芸術-演舞',
-  '舞台芸術-演劇',
-  '舞台芸術-演芸',
-]
 
 const headerStyle: React.CSSProperties = {
   //background: '#f0f0f0',
@@ -69,9 +32,9 @@ const stickyHeaderStyle: React.CSSProperties = {
 // 1行目見出しの縦書きテキスト用スタイル（下揃えに見せるために th 内で flex コンテナを使う）
 const colHeaderInnerStyle: React.CSSProperties = {
   display: 'flex',
-  alignItems: 'flex-end', // 下揃え相当
+  alignItems: 'flex-end',
   justifyContent: 'center',
-  height: '64px', // 見た目の調整。必要に応じて変更してください
+  height: '4em',
   padding: 0,
   margin: 0,
 }
@@ -80,7 +43,6 @@ const colHeaderTextStyle: React.CSSProperties & Record<string, string> = {
   writingMode: 'vertical-rl',
   // 欧数字混在でも視認性を保つ（ブラウザ用非標準プロパティを文字列で許容）
   textOrientation: 'mixed',
-  // 改行（<br/>）を効かせるために nowrap をやめる
   whiteSpace: 'normal',
   lineHeight: '1',
   padding: '0 4px',
@@ -105,57 +67,14 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
     setModalOpen(true)
   }
 
-  // モーダル表示中は thead を薄くするスタイルを用意
+  // モーダル表示中は thead を薄くするスタイル
   const headerStickyWhenModal = modalOpen
     ? { ...stickyHeaderStyle, opacity: 1.0 }
     : stickyHeaderStyle
 
   return (
     <div>
-      {/* ニューモーフィズム用スタイル（簡易） */}
-      <style>{`
-        .neumorph-btn {
-          width: 100%;
-          height: 100%;
-          border: none;
-          border-radius: 10px;
-          /* 真っ白な背景にして影だけ残す（ニューモーフィズム風） */
-          background: #ffffff;
-          box-shadow:
-            6px 6px 14px rgba(16, 24, 40, 0.06),
-            -6px -6px 14px rgba(255, 255, 255, 0.95),
-            inset 1px 1px 0 rgba(255,255,255,0.6);
-          color: #243447;
-          font-weight: 400;
-          cursor: pointer;
-          padding: 0;
-          outline: none;
-          transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, color 120ms ease;
-        }
-        /* Hover: 背景を青 (#0072D8) にして文字を白に */
-        .neumorph-btn:hover {
-          transform: translateY(-1px);
-          background: #0072D8;
-          color: #ffffff;
-          box-shadow:
-            8px 8px 18px rgba(2, 34, 80, 0.18),
-            -8px -8px 18px rgba(255, 255, 255, 0.85),
-            inset 1px 1px 0 rgba(255,255,255,0.08);
-        }
-        .neumorph-btn:active {
-          transform: translateY(1px);
-          background: #005bb5;
-          color: #ffffff;
-          box-shadow:
-            inset 6px 6px 12px rgba(8,24,48,0.08),
-            inset -6px -6px 12px rgba(255,255,255,0.7);
-        }
-        .neumorph-btn:focus {
-          box-shadow: 0 0 0 3px rgba(0,114,216,0.18);
-        }
-      `}</style>
-
-      <p>18行 x 14列 のマス目（行/列見出し付き）。各マスのボタンでモーダルを開きます。</p>
+      <p>芸術たしなみ図鑑</p>
 
       <div style={{ overflow: 'auto', maxHeight: '85vh' }}>
         <table style={{ borderCollapse: 'collapse' }}>
@@ -234,8 +153,12 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           }}
         />
       )}
-      <p>18行 x 14列 のマス目（行/列見出し付き）。各マスのボタンでモーダルを開きます。</p>
-
+      {/* 表とだいたい揃えた幅で中央に配置し、本文は左寄せ */}
+      <div style={{ maxWidth: '50vw', margin: '3em auto', textAlign: 'left', padding: '0 8px', lineHeight: '2.0' }}>
+        <p style={{ margin: 0 }}>
+          芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。
+        </p>
+      </div>
     </div>
   )
 }

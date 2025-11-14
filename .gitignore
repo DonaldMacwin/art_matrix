@@ -1,4 +1,5 @@
 ## Node
+node_modules
 node_modules/
 
 # Firebase admin service account (don't commit private keys)

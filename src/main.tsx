@@ -5,25 +5,21 @@ import App from './App.tsx'
 import { signInAnonymously } from 'firebase/auth'
 import { auth } from './firebase'
 
+console.log('[main] script loaded') // 追加: スクリプト読込の確認
+
 const root = createRoot(document.getElementById('root')!)
 
-// Sign in anonymously for local/dev Firestore access when rules require auth.
-// If anonymous sign-in fails we'll still render the app but log the error.
+// まず即座に描画して空白ページを避ける（デバッグ用）
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
 signInAnonymously(auth)
   .then(() => {
     console.log('[main] signed in anonymously')
-    root.render(
-      <StrictMode>
-        <App />
-      </StrictMode>,
-    )
   })
   .catch((err) => {
     console.error('[main] anonymous sign-in failed:', err)
-    // Render app anyway to show error UI — DetailPage will show debug info.
-    root.render(
-      <StrictMode>
-        <App />
-      </StrictMode>,
-    )
   })

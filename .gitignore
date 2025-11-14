@@ -35,3 +35,4 @@ dist-ssr
 *.sw?
 
 img_files/
+src/serviceAccountKey.json

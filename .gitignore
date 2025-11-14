@@ -36,3 +36,5 @@ dist-ssr
 
 img_files/
 src/serviceAccountKey.json
+src/serviceAccountKey.json
+public/*.json

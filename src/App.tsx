@@ -4,7 +4,6 @@ import MatrixGrid from './component/MatrixGrid'
 import DetailPage from './component/DetailPage'
 
 export default function App() {
-  // currentDetail に id と goBack を保持する
   const [currentDetail, setCurrentDetail] = useState<{ id: string | null; goBack?: () => void }>({ id: null })
 
   return (
@@ -23,7 +22,6 @@ export default function App() {
           <DetailPage
             id={currentDetail.id}
             onBack={() => {
-              // DetailPage の「戻る」押下時：まず goBack を呼んでモーダルを再表示、その後詳細状態をクリア
               try { currentDetail.goBack?.() } finally { setCurrentDetail({ id: null }) }
             }}
           />

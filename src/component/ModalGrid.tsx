@@ -8,26 +8,6 @@ type Props = {
   onSelectDetail: (r: number, c: number) => void
 }
 
-const overlayStyle: React.CSSProperties = {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  background: 'rgba(0,0,0,0.5)',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  zIndex: +1,
-}
-
-const boxStyle: React.CSSProperties = {
-  background: '#fff',
-  padding: '16px',
-  borderRadius: '6px',
-  minWidth: '320px',
-}
-
 export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props) {
   const SIZE = 4
   const [thumbs, setThumbs] = useState<Record<string, string | null>>({}) // key: "r-c"
@@ -65,13 +45,11 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
     return () => { mounted = false }
   }, [parentCell])
 
-  const imgSize = 56
-
   return (
-    <div style={overlayStyle} onClick={onClose}>
-      <div style={boxStyle} onClick={(e) => e.stopPropagation()}>
-        <div style={{ marginTop: '12px' }}>
-          <table style={{ borderCollapse: 'collapse' }}>
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+        <div style={{ marginTop: 12 }}>
+          <table className="modal-thumb-table">
             <tbody>
               {Array.from({ length: SIZE }, (_, rIdx) => {
                 const r = rIdx + 1
@@ -82,37 +60,20 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
                       const key = `${r}-${c}`
                       const url = thumbs[key]
                       return (
-                        <td key={c} style={{ padding: '6px', width: `${imgSize}px`, height: `${imgSize}px`, verticalAlign: 'middle' }}>
+                        <td key={c}>
                           <button
                             onClick={() => onSelectDetail(r, c)}
-                            style={{ width: `${imgSize}px`, height: `${imgSize}px`, padding: 0, border: '1px solid #ddd', background: 'transparent' }}
+                            className="modal-thumb-button"
                             aria-label={`詳細へ ${r},${c}`}
                           >
                             {url ? (
                               <img
                                 src={url}
                                 alt={`thumb ${r},${c}`}
-                                style={{
-                                  width: `${imgSize}px`,
-                                  height: `${imgSize}px`,
-                                  objectFit: 'cover',
-                                  display: 'block',
-                                }}
+                                className="modal-thumb-img"
                               />
                             ) : (
-                              <div style={{
-                                width: `${imgSize}px`,
-                                height: `${imgSize}px`,
-                                background: '#eee',
-                                color: '#666',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                fontSize: 12,
-                                userSelect: 'none'
-                              }}>
-                                N/A
-                              </div>
+                              <div className="modal-thumb-placeholder">N/A</div>
                             )}
                           </button>
                         </td>

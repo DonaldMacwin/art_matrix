@@ -80,8 +80,8 @@ export default function DetailPage({ id, onBack }: Props) {
       overflow: 'hidden', // 外側はスクロールを持たせない
       boxShadow: '0 8px 24px rgba(0,0,0,0.12)'
     }}>
-      
-      
+
+
 
       {loading ? (
         <p>読み込み中…</p>
@@ -97,27 +97,27 @@ export default function DetailPage({ id, onBack }: Props) {
           </details>
         </div>
       ) : data ? (
-        <div style={{ }}>
+        <div style={{}}>
           {/* 全体の高さを埋めるようにして、右カラム内で下部にボタンを固定 */}
           <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch', height: 'calc(100% - 0px)' }}>
-             <div style={{ flex: 1, minWidth: 240, display: 'flex', justifyContent: 'center' }}>
-               <div style={{ width: '100%', maxHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                 {data.imageUrl ? (
-                   <img
-                     src={data.imageUrl}
-                     alt={data.title || '作品画像'}
-                     style={{
-                       maxWidth: '100%',
-                       maxHeight: '90vh',
-                       width: 'auto',
-                       height: 'auto',
-                       objectFit: 'contain',
-                     }}
-                   />
-                 ) : null}
-               </div>
-             </div>
- 
+            <div style={{ flex: 1, minWidth: 240, display: 'flex', justifyContent: 'center' }}>
+              <div style={{ width: '100%', maxHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                {data.imageUrl ? (
+                  <img
+                    src={data.imageUrl}
+                    alt={data.title || '作品画像'}
+                    style={{
+                      maxWidth: '100%',
+                      maxHeight: '90vh',
+                      width: 'auto',
+                      height: 'auto',
+                      objectFit: 'contain',
+                    }}
+                  />
+                ) : null}
+              </div>
+            </div>
+
             {/* 右カラム：縦方向に並べ、説明領域はスクロール可能、ボタンは下へ押し出す */}
             <div style={{ flex: 1, minWidth: 240, display: 'flex', flexDirection: 'column' }}>
               <div style={{ padding: '12px', borderRadius: 6, display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -140,10 +140,10 @@ export default function DetailPage({ id, onBack }: Props) {
                 </div>
               </div>
             </div>
- 
-           </div>
-         </div>
-       ) : null}
-     </div>
-   )
- }
+
+          </div>
+        </div>
+      ) : null}
+    </div>
+  )
+}

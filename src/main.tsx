@@ -5,11 +5,8 @@ import App from './App.tsx'
 import { signInAnonymously } from 'firebase/auth'
 import { auth } from './firebase'
 
-console.log('[main] script loaded') // 追加: スクリプト読込の確認
-
 const root = createRoot(document.getElementById('root')!)
 
-// まず即座に描画して空白ページを避ける（デバッグ用）
 root.render(
   <StrictMode>
     <App />

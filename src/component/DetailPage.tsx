@@ -23,6 +23,13 @@ export default function DetailPage({ id, onBack }: Props) {
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [snapshotExists, setSnapshotExists] = useState<boolean | null>(null)
 
+  // 表示中は下層ページのスクロールを無効にする（モーダル効果）
+  useEffect(() => {
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = prev }
+  }, [])
+
   useEffect(() => {
     let mounted = true
     const fetchData = async () => {
@@ -61,9 +68,20 @@ export default function DetailPage({ id, onBack }: Props) {
   }, [id])
 
   return (
-    <div style={{ padding: '16px' }}>
-      <button onClick={onBack} style={{ marginBottom: '12px' }}>&larr; 戻る</button>
-      <p>選択されたマス： <strong>{id}</strong></p>
+    <div style={{
+      width: '100vw',
+      //maxWidth: '1200px',
+      height: '100vh',
+      //maxHeight: '900px',
+      background: '#fff',
+      boxSizing: 'border-box',
+      padding: '16px',
+      //borderRadius: '8px',
+      overflow: 'hidden', // 外側はスクロールを持たせない
+      boxShadow: '0 8px 24px rgba(0,0,0,0.12)'
+    }}>
+      
+      
 
       {loading ? (
         <p>読み込み中…</p>
@@ -79,36 +97,53 @@ export default function DetailPage({ id, onBack }: Props) {
           </details>
         </div>
       ) : data ? (
-        <div style={{ marginTop: '12px' }}>
-          <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1, minWidth: 240, display: 'flex', justifyContent: 'center' }}>
-              <div style={{ width: '100%', maxHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                {data.imageUrl ? (
-                  <img src={data.imageUrl} alt={data.title || '作品画像'} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                ) : null}
-              </div>
-            </div>
-
-            <div style={{ flex: 1, minWidth: 240 }}>
-              <div style={{ border: '1px solid #eee', padding: '12px', borderRadius: 6 }}>
-                <h3 style={{ marginTop: 0 }}>{data.title ?? 'タイトルなし'}</h3>
-                <div style={{ color: '#555', marginBottom: 8 }}>
-                  <strong>作家：</strong>{data.author ?? '不明'} / <strong>年：</strong>{data.year ?? '不明'}
+        <div style={{ }}>
+          {/* 全体の高さを埋めるようにして、右カラム内で下部にボタンを固定 */}
+          <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch', height: 'calc(100% - 0px)' }}>
+             <div style={{ flex: 1, minWidth: 240, display: 'flex', justifyContent: 'center' }}>
+               <div style={{ width: '100%', maxHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                 {data.imageUrl ? (
+                   <img
+                     src={data.imageUrl}
+                     alt={data.title || '作品画像'}
+                     style={{
+                       maxWidth: '100%',
+                       maxHeight: '90vh',
+                       width: 'auto',
+                       height: 'auto',
+                       objectFit: 'contain',
+                     }}
+                   />
+                 ) : null}
+               </div>
+             </div>
+ 
+            {/* 右カラム：縦方向に並べ、説明領域はスクロール可能、ボタンは下へ押し出す */}
+            <div style={{ flex: 1, minWidth: 240, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ padding: '12px', borderRadius: 6, display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div>
+                  <p>選択されたマス： <strong>{id}</strong></p>
+                  <h3 style={{ marginTop: 0 }}>{data.title ?? 'タイトルなし'}</h3>
+                  <div style={{ color: '#555', marginBottom: 8 }}>
+                    <strong>作家：</strong>{data.author ?? '不明'} / <strong>年：</strong>{data.year ?? '不明'}
+                  </div>
                 </div>
 
-                {/*<div style={{ marginBottom: 8 }}>
-                  <strong>タグ：</strong>{(data.tags && data.tags.length > 0) ? data.tags.join('、') : 'なし'}
-                </div>*/}
-
-                <div style={{ marginTop: 8, whiteSpace: 'pre-wrap', color: '#333' }}>
+                {/* テキスト部をスクロール可能にして高さを可変にする */}
+                <div style={{ marginTop: 8, whiteSpace: 'pre-wrap', color: '#333', textAlign: 'left', overflowY: 'auto' }}>
                   {data.description ?? '説明はありません。'}
                 </div>
+
+                {/* ボタンを常に右カラムの最下部に配置するために marginTop:auto を利用 */}
+                <div style={{ marginTop: 'auto', paddingTop: 12 }}>
+                  <button onClick={onBack} style={{ marginBottom: 0 }}>&larr; 戻る</button>
+                </div>
               </div>
             </div>
-
-          </div>
-        </div>
-      ) : null}
-    </div>
-  )
-}
+ 
+           </div>
+         </div>
+       ) : null}
+     </div>
+   )
+ }

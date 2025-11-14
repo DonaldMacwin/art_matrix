@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import ModalGrid from './ModalGrid'
 
 type Props = {
-  onNavigateToDetail: (id: string) => void
+  // 第2引数に「戻る」コールバックを渡せるようにする（親が受け取らなくても呼び出し側は安全）
+  onNavigateToDetail: (id: string, goBack?: () => void) => void
 }
 
 const ROWS = 18
@@ -72,8 +73,13 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           onClose={() => setModalOpen(false)}
           onSelectDetail={(subR, subC) => {
             const id = `R${activeCell.r}C${activeCell.c}-r${subR}c${subC}`
+            const parent = { ...activeCell } // クロージャで保持
             setModalOpen(false)
-            onNavigateToDetail(id)
+            // 親に通知するときに、モーダルを再表示する goBack コールバックを渡す
+            onNavigateToDetail(id, () => {
+              setActiveCell(parent)
+              setModalOpen(true)
+            })
           }}
         />
       )}

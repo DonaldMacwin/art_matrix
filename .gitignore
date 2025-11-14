@@ -5,6 +5,7 @@ node_modules/
 # Firebase admin service account (don't commit private keys)
 src/serviceAccountKey.json
 public/art-matrix-firebase-adminsdk-*.json
+public/*.json
 
 # build / vite
 dist/
@@ -35,6 +36,3 @@ dist-ssr
 *.sw?
 
 img_files/
-src/serviceAccountKey.json
-src/serviceAccountKey.json
-public/*.json

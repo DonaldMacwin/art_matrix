@@ -61,8 +61,8 @@
 .modal-thumb-placeholder {
   width: 56px;
   height: 56px;
-  background: #eee;
-  color: #666;
+  background: #fff;
+  color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;

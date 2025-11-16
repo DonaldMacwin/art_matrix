@@ -73,7 +73,7 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
                                 className="modal-thumb-img"
                               />
                             ) : (
-                              <div className="modal-thumb-placeholder">N/A</div>
+                              <div className="modal-thumb-placeholder"></div>
                             )}
                           </button>
                         </td>

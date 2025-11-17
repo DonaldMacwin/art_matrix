@@ -1265,7 +1265,7 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "医師の訪問",
+    "title": "医師の往診",
     "author": "ヤン・ステーン",
     "year": "c. 1665",
     "description": "恋煩いで倒れた娘を、脈診だけで診断しようとする愚かな医師を描いた風俗画。当時の迷信や人間の滑稽さをユーモラスに風刺しています。",
@@ -1280,10 +1280,10 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "壺の中の男",
-    "author": "アドリアーン・ブラウエル",
-    "year": "1630",
-    "description": "酩酊して壺の中に頭を突っ込んでしまった男の姿を描いた作品。農民の愚かさや飲酒の弊害を、コミカルかつ親しみやすく描写しています。",
+    "title": "喫煙者",
+    "author": "ヨース・ファン・クラースベーク",
+    "year": "1640",
+    "description": "たばこを吸いながらこちらを見つめる男の姿を、戯画的かつ陽気な表情で描いたフランドル風俗画。当時の酒場における陶酔と滑稽さを表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r02c02.jpg",
     "tags": [
       "油彩"
@@ -1310,10 +1310,10 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "豚を捕まえる農民",
-    "author": "ルイ・ル・ナン",
-    "year": "1640",
-    "description": "農民たちが逃げる豚を追いかける、日常の騒々しい一場面を写実的に描きつつ、そのドタバタ劇にユーモラスな視線を注いだ作品です。",
+    "title": "農民の婚宴",
+    "author": "ヤン・ブリューゲル (父)",
+    "year": "1568",
+    "description": "庶民の祝宴の喧騒と活気を、細部にわたりコミカルに描いた作品。酔っぱらいや無遠慮な客の姿を通じて、人間的な滑稽さと喜びを表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r02c04.jpg",
     "tags": [
       "油彩"
@@ -1325,10 +1325,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "笑う男",
-    "author": "ゲオルク・シュメルツ",
-    "year": "c. 1650",
-    "description": "歯を見せて大口を開けて豪快に笑う男の顔をクローズアップした作品。バロック時代の写実的ながら、どこかグロテスクで愉快な表情が魅力です。",
+    "title": "笑う子供",
+    "author": "フランス・ハルス",
+    "year": "c. 1627",
+    "description": "大口を開けて豪快に笑う子供の顔をクローズアップした作品（トローニー）。奔放で生き生きとした表情を、素早い筆致で捉えたバロック絵画の傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c01.jpg",
     "tags": [
       "油彩"
@@ -1344,7 +1344,7 @@
     "author": "フランシス・ベーコン",
     "year": "1950",
     "description": "恐ろしい叫びを描きながらも、その極端なデフォルメと誇張された表情が、ブラックユーモアのような滑稽さも内包している抽象表現主義の作品。",
-    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c02.jpg",
+    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c02.webp",
     "tags": [
       "油彩"
     ]
@@ -1355,10 +1355,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "大津絵：藤娘",
+    "title": "みかけハこハゐが とんだいゝ人だ",
     "author": "歌川国芳",
-    "year": "1845",
-    "description": "当時流行した大津絵の美人画のテーマを、猫などの動物を擬人化してパロディ化した浮世絵。軽妙な視覚的ユーモアが特徴です。",
+    "year": "1852",
+    "description": "複数の人間（や動物）の身体を組み合わせて、一人の恐ろしげな人物像を形作った「寄せ絵」。文字通りの視覚的なだまし絵と機知に富んだユーモアの傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c03.jpg",
     "tags": [
       "油彩"
@@ -1370,10 +1370,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "屁ひりよめご",
-    "author": "葛飾北斎",
-    "year": "1799",
-    "description": "日本の民間説話の題材。新妻が放屁によって家の中の物を吹き飛ばす様子を、極めて大胆かつ滑稽に描いた春画です。",
+    "title": "江戸名所道戯尽 浅草反甫の奇怪",
+    "author": "歌川広景",
+    "year": "1859",
+    "description": "狐や狸に化かされた人々が、夜の田んぼの中を鍬などを掲げ、奇妙な格好で歩き回る様子を描いた戯画。本人たちは真面目だが、傍観者から見ると滑稽な騒動を表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c04.jpg",
     "tags": [
       "油彩"
@@ -1385,10 +1385,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "七難七福",
-    "author": "狩野元信",
+    "title": "猿猴図",
+    "author": "長谷川等伯",
     "year": "",
-    "description": "16世紀初頭（室町時代末期）の日本画。人生における様々な困難（貧困、病気など）をコミカルな表情の人物で表現し、それらが転じて福となる様を描いた教訓的ながら愉快な作品。",
+    "description": "室町時代の水墨画で猿が擬人化されたり、人間のような動作をしたりする様子をコミカルに描いた作品群。特にユーモラスな表情や動作が魅力です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c01.jpg",
     "tags": [
       "油彩"
@@ -1400,10 +1400,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "羅漢図",
-    "author": "伝・李公麟",
-    "year": "",
-    "description": "11世紀 (宋時代) の中国絵画。悟りを開いたはずの仏弟子である羅漢たちが、俗っぽい、あるいは滑稽な行動（例：鼻をこする、居眠りする）をする姿を人間味あるユーモアで描いています。",
+    "title": "風流蛙大合戦之図",
+    "author": "河鍋暁斎",
+    "year": "1870",
+    "description": "カエルを武士に見立て、合戦の様子を描いた戯画。武具や軍勢の描写を細密にしつつ、カエルのユーモラスな表情と動作で、壮大な戦いを滑稽にパロディ化した傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c02.jpg",
     "tags": [
       "油彩"
@@ -1415,10 +1415,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "戯画・鍾馗図",
-    "author": "狩野探幽",
+    "title": "鬼の寒念仏",
+    "author": "",
     "year": "",
-    "description": "17世紀中頃（江戸時代初期）の日本画。疫病を祓う恐ろしいはずの鍾馗を、だらしのない姿や滑稽な表情で描いた戯画。格式高いテーマを庶民的な笑いで崩しています。",
+    "description": "恐ろしい鬼が僧衣をまとい、鉦を叩いて念仏を唱えるという風刺画題。本来の姿と偽善的な行動のギャップが滑稽で、見かけだけは慈悲深い偽善者を皮肉っています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c03.jpg",
     "tags": [
       "油彩"
@@ -1430,10 +1430,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "南瓜と鶏頭",
-    "author": "許道寧",
-    "year": "",
-    "description": "11世紀 (宋時代) の中国絵画。痩せた南瓜（かぼちゃ）と力強い鶏頭（けいとう）を対比的に描き、その形や生命力をユーモラスな筆致で表現した、中国の墨画です。",
+    "title": "イメージの裏切り（これはパイプではない）",
+    "author": "ルネ・マグリット",
+    "year": "1929",
+    "description": "パイプの絵の下に「Ceci n'est pas une pipe.（これはパイプではない。）」と書かれた作品。絵画と現実、言語とイメージの関係を問い、知的なパズルと同時に、強烈な不条理のユーモアを生み出しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c04.jpg",
     "tags": [
       "油彩"

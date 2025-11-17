@@ -485,10 +485,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "モナ・リザ",
+    "author": "レオナルド・ダ・ヴィンチ",
+    "year": "1505",
+    "description": "謎めいた微笑みと「スフマート」技法による柔らかな表現が、見る者に静謐で普遍的な美しさを感じさせます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r01c01.jpg",
     "tags": [
       "油彩"
@@ -500,10 +500,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "アテナイの学堂",
+    "author": "ラファエロ・サンティ",
+    "year": "1511",
+    "description": "古代ギリシャの偉大な哲学者たちが集う様子を、完璧な構図と調和をもって描いたフレスコ画。知的な美と秩序を感じさせます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r01c02.jpg",
     "tags": [
       "油彩"
@@ -515,10 +515,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "眠れるヴィーナス",
+    "author": "ジョルジョーネ",
+    "year": "1510",
+    "description": "開放的な風景の中に横たわるヴィーナスの姿は、優雅で官能的な美しさを湛え、後の裸婦像に大きな影響を与えました。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r01c03.jpg",
     "tags": [
       "油彩"
@@ -530,10 +530,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "ウルビーノのヴィーナス",
+    "author": "ティツィアーノ",
+    "year": "1538",
+    "description": "人間的で温かみのある肉体美と、室内での親密な雰囲気が魅力的。ルネサンスの理想美と官能的な優雅さが融合しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r01c04.jpg",
     "tags": [
       "油彩"
@@ -545,10 +545,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "シテール島への船出",
+    "author": "アントワーヌ・ヴァトー",
+    "year": "1717",
+    "description": "ロココ様式の優美な恋愛遊戯（フェート・ギャラント）を描いた傑作。淡い色彩と流れるような筆致が、夢見るような甘美な優雅さを伝えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r02c01.jpg",
     "tags": [
       "油彩"
@@ -560,10 +560,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
+    "title": "ぶらんこ",
+    "author": "ジャン＝オノレ・フラゴナール",
     "year": "2025",
-    "description": "これはテストデータです\n",
+    "description": "ロココ美術の代表作。豪華な衣装をまとった女性がブランコに乗る戯れるような様子が、軽やかで甘美な感情を伝えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r02c02.jpg",
     "tags": [
       "油彩"
@@ -575,10 +575,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "印象、日の出",
+    "author": "クロード・モネ",
+    "year": "1872",
+    "description": "霧と朝日の中の港の情景が、光と色彩の調和によって、清々しく穏やかな感動をもたらし、印象派の幕開けとなりました。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r02c03.jpg",
     "tags": [
       "油彩"
@@ -590,10 +590,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "ムーラン・ド・ラ・ギャレット",
+    "author": "ピエール＝オーギュスト・ルノワール",
+    "year": "1876",
+    "description": "木漏れ日の中でダンスを楽しむ人々を描いた、幸福感あふれる傑作。温かい色彩と活気が優美な喜びを表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r02c04.jpg",
     "tags": [
       "油彩"
@@ -605,10 +605,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "聖母子（ベルヴェデーレの聖母）",
+    "author": "ラファエロ・サンティ",
+    "year": "1506",
+    "description": "完璧な三角構図の中に描かれた聖母と幼いキリスト、洗礼者ヨハネの姿。穏やかな表情と理想化された美しさが、至高の優美さを象徴します。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r03c01.jpg",
     "tags": [
       "油彩"
@@ -620,10 +620,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "オフィーリア",
+    "author": "ジョン・エヴァレット・ミレイ",
+    "year": "1852",
+    "description": "シェイクスピア劇のヒロインが水面に浮かぶ姿を、緻密な植物描写と静謐な美しさで描いたラファエル前派の代表作。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r03c02.jpg",
     "tags": [
       "油彩"
@@ -635,10 +635,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "山水長巻",
+    "author": "雪舟",
+    "year": "1486",
+    "description": "中国の雄大な自然をモチーフに、水墨の濃淡で表現された日本水墨画の最高傑作。墨一色で描かれる清澄な美を湛えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r03c03.jpg",
     "tags": [
       "油彩"
@@ -650,10 +650,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "東海道五十三次:日本橋",
+    "author": "歌川広重",
+    "year": "1833",
+    "description": "江戸と京を結ぶ東海道の宿場風景を描いた浮世絵。叙情的で落ち着いた色彩と、旅情を誘う穏やかな情景が、静かな優雅さを伝えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r03c04.jpg",
     "tags": [
       "油彩"
@@ -665,11 +665,11 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
-    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r04c01.jpg",
+    "title": "道",
+    "author": "東山魁夷",
+    "year": "1950",
+    "description": "白い道が広がる静寂な風景を描いた日本画。深い青と緑の対比、余白の美が、内省的で清らかな美しさと希望を感じさせます。",
+    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r04c01.webp",
     "tags": [
       "油彩"
     ]
@@ -680,10 +680,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "竹雀図",
+    "author": "伝・牧谿",
+    "year": "",
+    "description": "13世紀頃の中国南宋時代の水墨画。最小限の筆致で描かれた竹と雀が、自然の生命力と静けさ、そして東洋的な精神性を優雅に表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r04c02.jpg",
     "tags": [
       "油彩"
@@ -695,10 +695,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "鳥獣人物戯画 (甲巻)",
+    "author": "",
+    "year": "",
+    "description": "12世紀中頃の日本の絵巻物。擬人化された動物たちの動きを、軽妙かつ洗練された白描の線で描いた絵巻物。線描の技術的優美さが際立っています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r04c03.jpg",
     "tags": [
       "油彩"
@@ -710,10 +710,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "樹下美人図",
+    "author": "菱川師宣",
+    "year": "",
+    "description": "17世紀後半の作品。浮世絵の祖とされる師宣による初期の肉筆美人画。簡潔ながらも優雅な姿態と衣装の表現が、洗練された美しさを際立たせています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C03-r04c04.jpg",
     "tags": [
       "油彩"
@@ -725,10 +725,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "ダンス",
+    "author": "アンリ・マティス",
+    "year": "1910",
+    "description": "シンプルな線と鮮やかな色彩で、手を取り合って踊る5人の人物を描いた作品。純粋な生命の喜び、躍動感、そして解放感が圧倒的なエネルギーで表現されています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r01c01.jpg",
     "tags": [
       "油彩"
@@ -740,10 +740,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "自画像",
+    "author": "フリーダ・カーロ",
+    "year": "1940",
+    "description": "困難な状況下でも、強い意志と生きる情熱を燃やすカーロの眼差しが特徴的です。メキシコの伝統的な色彩や装飾が、生命力と自信に満ちたオーラを放っています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r01c02.jpg",
     "tags": [
       "油彩"
@@ -755,10 +755,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "ひまわり",
+    "author": "フィンセント・ファン・ゴッホ",
+    "year": "1888",
+    "description": "太陽のような明るさ、情熱、そして力強い生命力を、厚い筆致と燃えるような黄色で表現した作品。ゴッホの感情の爆発が、見る者に元気を与えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r01c03.jpg",
     "tags": [
       "油彩"
@@ -770,10 +770,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "アニエールの水浴",
+    "author": "ジョルジュ・スーラ",
+    "year": "1884",
+    "description": "穏やかな光の中で、水辺で休息する人々を点描で描いています。夏の気だるさと幸福感、そして静かな平和に満ちた、心地よい活力を感じさせます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r01c04.jpg",
     "tags": [
       "油彩"
@@ -785,10 +785,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "春 (Primavera)",
+    "author": "サンドロ・ボッティチェリ",
+    "year": "1480",
+    "description": "古代神話の登場人物たちが織りなす春の訪れ、豊穣、そして愛の喜びを、華やかで優美な線と色彩で描いた、ルネサンス絵画の傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r02c01.jpg",
     "tags": [
       "油彩"
@@ -800,10 +800,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "1616年の聖ゲオルギウス市民警備隊士官の宴会",
+    "author": "フランツ・ハルス",
+    "year": "1630",
+    "description": "活気に満ちたオランダ市民の集いを大胆な筆致で描き、祝祭の陽気さ、団結の喜び、そして誇らしげな闊達さが伝わります。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r02c02.jpg",
     "tags": [
       "油彩"
@@ -815,10 +815,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "冨嶽三十六景：凱風快晴（赤富士）",
+    "author": "葛飾北斎",
+    "year": "1833",
+    "description": "真夏の朝、雲一つない空に赤く染まる富士山の姿は、荘厳さ、力強さ、そして雄大な自然のエネルギーを感じさせ、見る者に活力を与えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r02c03.jpg",
     "tags": [
       "油彩"
@@ -830,10 +830,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "果物籠を持つ少年",
+    "author": "ミケランジェロ・メリージ・ダ・カラヴァッジョ",
+    "year": "1593",
+    "description": "若々しい生命力、豊かさ、そして五感を刺激する現実感が、精密な描写で表現されています。自然の恵みへの喜びを感じさせる静物画の傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r02c04.jpg",
     "tags": [
       "油彩"
@@ -845,10 +845,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "夢",
+    "author": "パブロ・ピカソ",
+    "year": "1932",
+    "description": "ピカソの恋人マリー・テレーズ・ワルテルを描いた作品。鮮やかな色彩と曲線が、愛する喜び、若さ、そして幸福感といった、明るく官能的な感情をストレートに表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r03c01.jpg",
     "tags": [
       "油彩"
@@ -860,11 +860,11 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
-    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r03c02.jpg",
+    "title": "風神雷神図屏風",
+    "author": "俵屋宗達",
+    "year": "",
+    "description": "17世紀初頭の作品。金地に描かれた風神と雷神が持つ荒々しいエネルギーとダイナミックな動きは、興奮、驚き、そして神々しい力への高揚感を直接的に喚起します。",
+    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r03c02.png",
     "tags": [
       "油彩"
     ]
@@ -875,10 +875,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "アイガー、メンヒ、ユングフラウ、朝の太陽の下で",
+    "author": "フェルディナント・ホドラー",
+    "year": "1908",
+    "description": "スイスアルプス三大名峰が朝日に照らされる雄大な光景は、自然との一体感、清々しさ、そして内面的な力が湧き上がるような感情を呼び起こします。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r03c03.jpg",
     "tags": [
       "油彩"
@@ -890,10 +890,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "スケートをする人々",
+    "author": "ヘンドリック・アーフェルカンプ",
+    "year": "1630",
+    "description": "氷上を滑る無数の人々が、冬の祝祭の活気、庶民の楽しさ、そして生命の躍動を生き生きと伝え、寒さの中にも温かい喜びを感じさせます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r03c04.jpg",
     "tags": [
       "油彩"
@@ -905,10 +905,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "誕生日",
+    "author": "マルク・シャガール",
+    "year": "1915",
+    "description": "妻ベラにキスをするシャガールが宙に浮かんでいる様子を描き、愛の力、夢想的な喜び、そして幸福による高揚感が表現されています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r04c01.jpg",
     "tags": [
       "油彩"
@@ -920,11 +920,11 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
-    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r04c02.jpg",
+    "title": "ツバメの飛翔の経路と力学的シーケンス (Linee andamentali e successioni dinamiche di rondini)",
+    "author": "ジャコモ・バッラ",
+    "year": "1913",
+    "description": "ツバメの動きを幾重にも重ねて表現し、ダイナミズム、速度、そして現代の活気を強烈に感じさせます。線と形の反復が、エネルギーの連続性を強調しています。",
+    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r04c02.webp",
     "tags": [
       "油彩"
     ]
@@ -935,10 +935,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "果樹園 (Obstgarten)",
+    "author": "グスタフ・クリムト",
+    "year": "1905",
+    "description": "明るい色彩と点描的な技法で、花々や木々の豊かな生命力を表現し、見る者に開放感と満たされた喜びを与えます。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r04c03.jpg",
     "tags": [
       "油彩"
@@ -950,10 +950,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "サン・ロマーノの戦い",
+    "author": "パオロ・ウッチェロ",
+    "year": "1440",
+    "description": "激しい戦闘の瞬間を、鮮やかな色彩と革新的な遠近法で描き、騎士たちの興奮、勇猛さ、そして力強いエネルギーを躍動的に表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C04-r04c04.jpg",
     "tags": [
       "油彩"
@@ -965,10 +965,10 @@
     "parentCol": 5,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "ヘントの祭壇画",
+    "author": "ヤン・ファン・エイク、フーベルト・ファン・エイク",
+    "year": "1432",
+    "description": "油彩画技法の発展に決定的な役割を果たした傑作。宝石、毛皮、肌の質感など、驚異的な細密描写と写実性は、当時のフランドル絵画の頂点を示す。複雑な多翼形式も特徴。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r01c01.jpg",
     "tags": [
       "油彩"
@@ -980,10 +980,10 @@
     "parentCol": 5,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "バッカス（ワインの神）",
+    "author": "ミケランジェロ・メリージ・ダ・カラヴァッジョ",
+    "year": "1595",
+    "description": "光と影の劇的な対比（キアロスクーロ）を駆使し、聖人や神話を日常の生々しい人間として描く革新的なスタイルを確立。バロック絵画の口火を切った。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r01c02.jpg",
     "tags": [
       "油彩"
@@ -995,10 +995,10 @@
     "parentCol": 5,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "アルノルフィーニ夫妻の肖像",
+    "author": "ヤン・ファン・エイク",
+    "year": "1434",
+    "description": "鏡に映る画家の姿を含め、室内の全てを細密に描き込んだ初期フランドル派の傑作。特に、画面奥の凸面鏡の描写は、空間と光の表現における技巧の巧妙さの極致。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r01c03.jpg",
     "tags": [
       "油彩"
@@ -1010,10 +1010,10 @@
     "parentCol": 5,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "記憶の固執（柔らかい時計）",
+    "author": "サルバドール・ダリ",
+    "year": "1931",
+    "description": "極めて写実的な古典的技法で、現実にはありえない「柔らかい時計」を描き出したシュルレアリスムの代表作。無意識と時間の相対性という哲学的テーマを視覚的に表現した趣向が巧妙。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r01c04.jpg",
     "tags": [
       "油彩"
@@ -1025,10 +1025,10 @@
     "parentCol": 5,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "グエルニカ",
+    "author": "パブロ・ピカソ",
+    "year": "1937",
+    "description": "キュビスムの多視点や形態の分解と、象徴的な表現を融合させ、戦争の悲劇を訴えた巨大壁画。その構成とメッセージ性の強力さが技巧と趣向の両面で評価される。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r02c01.jpg",
     "tags": [
       "油彩"
@@ -1040,10 +1040,10 @@
     "parentCol": 5,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "トロンプ・ルイユ (だまし絵)",
+    "author": "コルネリス・ノルベルトゥス・ヘイスブレヒツ",
+    "year": "1670",
+    "description": "書類や道具がまるで壁に掛けられているかのように、光と影の描写により驚くほどリアルに描き出された静物画。視覚的な錯覚を利用した技巧（トロンプ・ルイユ）の極致。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r02c02.jpg",
     "tags": [
       "油彩"
@@ -1055,10 +1055,10 @@
     "parentCol": 5,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
+    "title": "泉",
+    "author": "ジャン＝オーギュスト＝ドミニク・アングル",
     "year": "2025",
-    "description": "これはテストデータです\n",
+    "description": "19世紀古典主義の到達点。理想化された完璧な均整美を持つ裸婦像と、壺から流れ落ちる水の透明感の表現が、技巧の完成度として高く評価される。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r02c03.jpg",
     "tags": [
       "油彩"
@@ -1070,10 +1070,10 @@
     "parentCol": 5,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
+    "title": "グランド・ジャット島の日曜日の午後",
+    "author": "ジョルジュ・スーラ",
     "year": "2025",
-    "description": "これはテストデータです\n",
+    "description": "点描（ディヴィジョニズム）技法を確立した記念碑的な作品。純粋な色彩の小さな点々を画面全体に配置し、科学的な色彩理論に基づいて光と色彩の視覚的な混合を追求した。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r02c04.jpg",
     "tags": [
       "油彩"
@@ -1085,10 +1085,10 @@
     "parentCol": 5,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "我が子を食らうサトゥルヌス",
+    "author": "フランシスコ・デ・ゴヤ",
+    "year": "1823",
+    "description": "ゴヤの「黒い絵」シリーズの一つ。神話の主題を、感情をむき出しにした荒々しい筆致と恐ろしい描写で表現し、人間の精神的な闇を暴き出した異色の技巧。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r03c01.jpg",
     "tags": [
       "油彩"
@@ -1100,10 +1100,10 @@
     "parentCol": 5,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "清明上河図",
+    "author": "張択端",
+    "year": "",
+    "description": "12世紀初頭（北宋）の中国絵画。首都汴京の賑わいを、数千人の人物、建物、船とともに極めて詳細に描き込んだパノラマ的な大作。中国風俗画における細密描写と構成の最高峰。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r03c02.jpg",
     "tags": [
       "油彩"
@@ -1115,10 +1115,10 @@
     "parentCol": 5,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "秋冬山水図",
+    "author": "雪舟",
+    "year": "",
+    "description": "1400年代後半（室町時代）の日本水墨画。破墨（はぼく）」や「渇筆（かっぴつ）」といった筆墨技法を駆使した水墨画の金字塔。対照的な「秋景」と「冬景」を一つの画面に描き分け、大胆な構図と空間表現の巧みさを示す。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r03c03.jpg",
     "tags": [
       "油彩"
@@ -1130,10 +1130,10 @@
     "parentCol": 5,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "紅白梅図屏風",
+    "author": "尾形光琳",
+    "year": "",
+    "description": "1700年代初頭（江戸時代）の日本画。抽象化された水の流れと、左右の紅白梅の対比が際立つ装飾的な傑作。極度に洗練されたデザイン感覚と、色彩の配置の妙が、日本美術の「粋」を表現している。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r03c04.jpg",
     "tags": [
       "油彩"
@@ -1145,10 +1145,10 @@
     "parentCol": 5,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
+    "title": "松林図屏風",
+    "author": "長谷川等伯",
     "year": "2025",
-    "description": "これはテストデータです\n",
+    "description": "1500年代末（安土桃山時代）の日本画。墨の濃淡と滲み（ぼかし）の技法のみで、霧の中に佇む松林の情景を表現した水墨画の金字塔。水墨一色で空間の深さと静謐な美しさを描き出す技巧は極めて巧妙。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r04c01.jpg",
     "tags": [
       "油彩"
@@ -1160,10 +1160,10 @@
     "parentCol": 5,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "九龍図",
+    "author": "陳容",
+    "year": "",
+    "description": "1200年代中頃（南宋）の中国絵画。墨の飛沫、ぼかし、かすれを自在に操り、九頭の龍が雲や水の中から現れるさまを、圧倒的な筆致の力強さと迫力で描いた水墨画の傑作。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r04c02.jpg",
     "tags": [
       "油彩"
@@ -1175,10 +1175,10 @@
     "parentCol": 5,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "聖三位一体",
+    "author": "マサッチオ",
+    "year": "1428",
+    "description": "線遠近法（一点透視図法）を絵画に初めて、数学的な厳密さをもって応用した作品。奥行きのある建築空間の錯覚を生み出し、ルネサンス以降の絵画技法に革命をもたらした。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r04c03.jpg",
     "tags": [
       "油彩"
@@ -1190,10 +1190,10 @@
     "parentCol": 5,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "ダナエ",
+    "author": "グスタフ・クリムト",
+    "year": "1907",
+    "description": "金箔を多用し、装飾的な文様の中に官能的な女性像を描き出した世紀末ウィーンの象徴主義作品。女性の肉体と黄金の装飾が見事に融合した豪華絢爛で退廃的な趣向。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C05-r04c04.jpg",
     "tags": [
       "油彩"
@@ -1205,10 +1205,10 @@
     "parentCol": 6,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "結婚の契約",
+    "author": "ウィリアム・ホガース",
+    "year": "1745",
+    "description": "『当世風の結婚』連作の第一作。没落貴族と成金の商人の間の、愛のない政略結婚を風刺的に描いた、英国社会批判の傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r01c01.jpg",
     "tags": [
       "油彩"
@@ -1220,10 +1220,10 @@
     "parentCol": 6,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "狂人の家の患者たち",
+    "author": "ウィリアム・ホガース",
+    "year": "1735",
+    "description": "『放蕩一代記』の最終場面。当時の精神病院の悲惨さと、それを娯楽として見物する大衆の冷酷さを、強烈な諷刺とユーモアを交えて表現しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r01c02.jpg",
     "tags": [
       "油彩"
@@ -1235,10 +1235,10 @@
     "parentCol": 6,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "エレファント・セレス",
+    "author": "マックス・エルンスト",
+    "year": "1921",
+    "description": "奇妙な機械的な象のような生物が描かれたシュルレアリスムの代表作。その不条理で奇天烈なイメージが、視覚的な面白さとユーモアを誘います。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r01c03.jpg",
     "tags": [
       "油彩"
@@ -1250,10 +1250,10 @@
     "parentCol": 6,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "メイ・ウェストの顔",
+    "author": "サルバドール・ダリ",
+    "year": "1935",
+    "description": "女優メイ・ウェストの顔の特徴（髪、目、唇、鼻）を家具や建築に置き換えた作品。部屋全体が顔に見えるという、視覚的なユーモアとだまし絵の傑作です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r01c04.jpg",
     "tags": [
       "油彩"
@@ -1265,10 +1265,10 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "医師の訪問",
+    "author": "ヤン・ステーン",
+    "year": "c. 1665",
+    "description": "恋煩いで倒れた娘を、脈診だけで診断しようとする愚かな医師を描いた風俗画。当時の迷信や人間の滑稽さをユーモラスに風刺しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r02c01.jpg",
     "tags": [
       "油彩"
@@ -1280,10 +1280,10 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "壺の中の男",
+    "author": "アドリアーン・ブラウエル",
+    "year": "1630",
+    "description": "酩酊して壺の中に頭を突っ込んでしまった男の姿を描いた作品。農民の愚かさや飲酒の弊害を、コミカルかつ親しみやすく描写しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r02c02.jpg",
     "tags": [
       "油彩"
@@ -1295,10 +1295,10 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "馬鹿げたお辞儀",
+    "author": "オノレ・ドーミエ",
+    "year": "c. 1845",
+    "description": "フランスの裁判官や弁護士の体型や態度を大袈裟にデフォルメし、権威者の滑稽さ、無能さを鋭く風刺したカリカチュアです。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r02c03.jpg",
     "tags": [
       "油彩"
@@ -1310,10 +1310,10 @@
     "parentCol": 6,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "豚を捕まえる農民",
+    "author": "ルイ・ル・ナン",
+    "year": "1640",
+    "description": "農民たちが逃げる豚を追いかける、日常の騒々しい一場面を写実的に描きつつ、そのドタバタ劇にユーモラスな視線を注いだ作品です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r02c04.jpg",
     "tags": [
       "油彩"
@@ -1325,10 +1325,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "笑う男",
+    "author": "ゲオルク・シュメルツ",
+    "year": "c. 1650",
+    "description": "歯を見せて大口を開けて豪快に笑う男の顔をクローズアップした作品。バロック時代の写実的ながら、どこかグロテスクで愉快な表情が魅力です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c01.jpg",
     "tags": [
       "油彩"
@@ -1340,10 +1340,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "叫ぶ顔",
+    "author": "フランシス・ベーコン",
+    "year": "1950",
+    "description": "恐ろしい叫びを描きながらも、その極端なデフォルメと誇張された表情が、ブラックユーモアのような滑稽さも内包している抽象表現主義の作品。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c02.jpg",
     "tags": [
       "油彩"
@@ -1355,10 +1355,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "大津絵：藤娘",
+    "author": "歌川国芳",
+    "year": "1845",
+    "description": "当時流行した大津絵の美人画のテーマを、猫などの動物を擬人化してパロディ化した浮世絵。軽妙な視覚的ユーモアが特徴です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c03.jpg",
     "tags": [
       "油彩"
@@ -1370,10 +1370,10 @@
     "parentCol": 6,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "屁ひりよめご",
+    "author": "葛飾北斎",
+    "year": "1799",
+    "description": "日本の民間説話の題材。新妻が放屁によって家の中の物を吹き飛ばす様子を、極めて大胆かつ滑稽に描いた春画です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r03c04.jpg",
     "tags": [
       "油彩"
@@ -1385,10 +1385,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "七難七福",
+    "author": "狩野元信",
+    "year": "",
+    "description": "16世紀初頭（室町時代末期）の日本画。人生における様々な困難（貧困、病気など）をコミカルな表情の人物で表現し、それらが転じて福となる様を描いた教訓的ながら愉快な作品。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c01.jpg",
     "tags": [
       "油彩"
@@ -1400,10 +1400,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "羅漢図",
+    "author": "伝・李公麟",
+    "year": "",
+    "description": "11世紀 (宋時代) の中国絵画。悟りを開いたはずの仏弟子である羅漢たちが、俗っぽい、あるいは滑稽な行動（例：鼻をこする、居眠りする）をする姿を人間味あるユーモアで描いています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c02.jpg",
     "tags": [
       "油彩"
@@ -1415,10 +1415,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "戯画・鍾馗図",
+    "author": "狩野探幽",
+    "year": "",
+    "description": "17世紀中頃（江戸時代初期）の日本画。疫病を祓う恐ろしいはずの鍾馗を、だらしのない姿や滑稽な表情で描いた戯画。格式高いテーマを庶民的な笑いで崩しています。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c03.jpg",
     "tags": [
       "油彩"
@@ -1430,10 +1430,10 @@
     "parentCol": 6,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "南瓜と鶏頭",
+    "author": "許道寧",
+    "year": "",
+    "description": "11世紀 (宋時代) の中国絵画。痩せた南瓜（かぼちゃ）と力強い鶏頭（けいとう）を対比的に描き、その形や生命力をユーモラスな筆致で表現した、中国の墨画です。",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R01C06-r04c04.jpg",
     "tags": [
       "油彩"

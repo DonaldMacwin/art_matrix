@@ -203,7 +203,8 @@
   color: #333;
   text-align: left;
   overflow-y: auto;
-  line-height: 2;
+  line-height: 2.25;
+  font-size: 1.25em;
 }
 
 /* 戻るボタン用（neumorph-btn と組み合わせて使う） */

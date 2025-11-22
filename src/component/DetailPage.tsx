@@ -53,6 +53,10 @@ export default function DetailPage({ id, onBack }: Props) {
         setErrorMessage(null)
         const ref = doc(db, 'details', id)
         const snap = await getDoc(ref)
+
+        // デバッグログ（ここで取得している id と Firestore の結果を出力）
+        console.log('[DetailPage] fetch id=', id, 'exists=', snap.exists(), 'data=', snap.exists() ? snap.data() : null)
+
         if (!mounted) return
         const exists = snap.exists()
         setSnapshotExists(exists)

@@ -27,7 +27,13 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
                 const snap = await getDoc(doc(db, 'details', id))
                 if (snap.exists()) {
                   const data = snap.data() as { imageUrl?: string }
-                  next[key] = data.imageUrl ?? null
+                  // "no_URL" や不正な値（http/https で始まらないもの）は画像なしと扱う
+                  const img = data.imageUrl ?? null
+                  if (!img || img === 'no_URL' || typeof img !== 'string' || !/^https?:\/\//.test(img)) {
+                    next[key] = null
+                  } else {
+                    next[key] = img
+                  }
                 } else {
                   next[key] = null
                 }
@@ -45,45 +51,57 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
     return () => { mounted = false }
   }, [parentCell])
 
+  // 存在するサムネだけを抽出して順序（行優先）を維持する
+  const entries: { r: number; c: number; url: string }[] = []
+  for (let r = 1; r <= SIZE; r++) {
+    for (let c = 1; c <= SIZE; c++) {
+      const key = `${r}-${c}`
+      const url = thumbs[key]
+      if (typeof url === 'string' && /^https?:\/\//.test(url)) {
+        entries.push({ r, c, url })
+      }
+    }
+  }
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-box" onClick={(e) => e.stopPropagation()}>
         <div style={{ marginTop: 12 }}>
-          <table className="modal-thumb-table">
-            <tbody>
-              {Array.from({ length: SIZE }, (_, rIdx) => {
-                const r = rIdx + 1
-                return (
-                  <tr key={r}>
-                    {Array.from({ length: SIZE }, (_, cIdx) => {
-                      const c = cIdx + 1
-                      const key = `${r}-${c}`
-                      const url = thumbs[key]
-                      return (
-                        <td key={c}>
-                          <button
-                            onClick={() => onSelectDetail(r, c)}
-                            className="modal-thumb-button"
-                            aria-label={`詳細へ ${r},${c}`}
-                          >
-                            {url ? (
-                              <img
-                                src={url}
-                                alt={`thumb ${r},${c}`}
-                                className="modal-thumb-img"
-                              />
-                            ) : (
-                              <div className="modal-thumb-placeholder"></div>
-                            )}
-                          </button>
-                        </td>
-                      )
-                    })}
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
+          {/* 存在するサムネだけを詰めて表示するグリッド */}
+          <div
+            className="modal-thumb-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: `repeat(${SIZE}, 56px)`, // 必要に応じてサイズ調整
+              gap: 8,
+              justifyContent: 'center',
+            }}
+          >
+            {entries.map(({ r, c, url }) => {
+              const key = `${r}-${c}`
+              return (
+                <button
+                  key={key}
+                  onClick={() => onSelectDetail(r, c)}
+                  className="modal-thumb-button"
+                  aria-label={`詳細へ ${r},${c}`}
+                  style={{ padding: 0, border: 'none', background: 'transparent' }}
+                >
+                  <img
+                    src={url}
+                    alt={`thumb ${r},${c}`}
+                    className="modal-thumb-img"
+                    onError={(e) => {
+                      // 画像が壊れている場合はその要素自体を非表示にしてレイアウトを詰める
+                      const btn = (e.currentTarget.closest('button') as HTMLButtonElement | null)
+                      if (btn) btn.style.display = 'none'
+                    }}
+                    style={{ width: '56px', height: '56px', objectFit: 'cover' }}
+                  />
+                </button>
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>

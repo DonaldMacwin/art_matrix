@@ -3340,7 +3340,7 @@
     "title": "テスト作品",
     "author": "テスト作家",
     "year": "2025",
-    "description": "これはテストデータであるが、醜悪性や通俗性を喚起する図像を扱う際は、表象の歴史的文脈と受容史、そして技法が生み出す生理的反応のメカニズムを明確に区別して論じる必要がある。視覚的ショックは意図的に用いられる場合もあり、その倫理的評価は時代と社会条件に依存する。学芸的取り扱いにおいては保存・展示・解説の各段階で配慮が不可欠である。",
+    "description": "",
     "imageUrl": "no_URL",
     "tags": [
       "油彩"
@@ -3355,22 +3355,22 @@
     "title": "テスト作品",
     "author": "テスト作家",
     "year": "2025",
-    "description": "これはテストデータである。醜悪性や通俗表現を含む作品を学術的に解説する際は、作品が引き起こす感情反応を単なる非難に終わらせず、技法・マテリアル・制作史・受容史という多層的枠組みのもとで分析することが望ましい。",
+    "description": "",
     "imageUrl": "no_URL",
     "tags": [
       "油彩"
     ]
-  }
-,  {
+  },
+  {
     "id": "R2C1-r1c1",
     "parentRow": 2,
     "parentCol": 1,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Earthrise",
+    "author": "William Anders (Apollo 8 crew)",
+    "year": "1968",
+    "description": "地球を宇宙空間から初めて壮麗に捉えた写真。宇宙的な視点が宗教的・存在論的な畏敬を喚起する。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r01c01.jpg",
     "tags": [
       "油彩"
@@ -3382,10 +3382,10 @@
     "parentCol": 1,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Afghan Girl",
+    "author": "Steve McCurry",
+    "year": "1984",
+    "description": "鮮烈な瞳のポートレートが個人を象徴的・超越的存在へと高め、見手に深い共感と畏敬を与える。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r01c02.jpg",
     "tags": [
       "油彩"
@@ -3397,10 +3397,10 @@
     "parentCol": 1,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Self‑immolation of Thích Quảng Đức",
+    "author": "Malcolm Browne",
+    "year": "1963",
+    "description": "仏教的な自己犠牲を撮影した衝撃的な一枚。宗教的行為と政治性が交錯し、聖性をめぐる強い感情を呼び起こす。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r01c03.jpg",
     "tags": [
       "油彩"
@@ -3412,11 +3412,11 @@
     "parentCol": 1,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
-    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r01c04.jpg",
+    "title": "Tank Man (「天安門の壁を阻む男」) ",
+    "author": "Jeff Widener",
+    "year": "1989",
+    "description": "一人の市民が戦車に立ち向かう瞬間は、市民的・道徳的な勇気を聖的な象徴として提示する。複数の写真家が撮影。\n",
+    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r01c04.webp",
     "tags": [
       "油彩"
     ]
@@ -3427,10 +3427,10 @@
     "parentCol": 1,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Guerrillero Heroico",
+    "author": "Alberto Korda",
+    "year": "1960",
+    "description": "チェ・ゲバラの肖像が革命の象徴化を生み、信仰に近い崇敬を視覚文化に定着させた代表作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r02c01.jpg",
     "tags": [
       "油彩"
@@ -3442,10 +3442,10 @@
     "parentCol": 1,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Nuestra Señora de las Iguanas (Our Lady of the Iguanas)",
+    "author": "Graciela Iturbide,",
+    "year": "1979",
+    "description": "民俗的／宗教的モティーフを強い象徴性で示すポートレート。民間信仰と個の尊厳が重なり崇高さを生む。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r02c02.jpg",
     "tags": [
       "油彩"
@@ -3457,10 +3457,10 @@
     "parentCol": 1,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Serra Pelada",
+    "author": "Sebastião Salgado",
+    "year": "1986",
+    "description": "何千人もの坑夫を俯瞰で捉えた写真は、人間の営為の壮絶さと畏怖を提示するランドスケープ的人間像。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r02c03.jpg",
     "tags": [
       "油彩"
@@ -3472,10 +3472,10 @@
     "parentCol": 1,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Behind the Gare Saint‑Lazare",
+    "author": "Henri Cartier‑Bresson",
+    "year": "1932",
+    "description": "瞬間（decisive moment）の把握により、日常の一瞬が詩的・荘厳に変容することを示した名作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r02c04.jpg",
     "tags": [
       "油彩"
@@ -3487,10 +3487,10 @@
     "parentCol": 1,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Invasion / Prague 1968（プラハ侵攻の写真群）",
+    "author": "Josef Koudelka",
+    "year": "1968",
+    "description": "抑圧と抵抗の場を劇的に記録した白黒写真群は、歴史的悲劇の崇高さを写し取る。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r03c01.jpg",
     "tags": [
       "油彩"
@@ -3502,10 +3502,10 @@
     "parentCol": 1,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Vanishing Race",
+    "author": "Edward S. Curtis",
+    "year": "1904",
+    "description": "北米先住民を神話化・記録化した象徴的なイメージ群で、「消えゆくもの」を聖的に思わせる表現が問題を含みつつ影響力を持つ。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r03c02.jpg",
     "tags": [
       "油彩"
@@ -3517,10 +3517,10 @@
     "parentCol": 1,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Nuit de Noël",
+    "author": "Malick Sidibé",
+    "year": "1963",
+    "description": "1960年代マリの若者文化を祝祭的に写し、生命力と共同体性が神聖な感情を呼び起こす。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r03c03.jpg",
     "tags": [
       "油彩"
@@ -3532,10 +3532,10 @@
     "parentCol": 1,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Karasu (Ravens) シリーズ",
+    "author": "Masahisa Fukase",
+    "year": "1986",
+    "description": "烏（からす）を反復して撮ることで不吉さと詩性を結びつけ、個人的な喪失感が普遍的な崇高さへと昇華される。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r03c04.jpg",
     "tags": [
       "油彩"
@@ -3547,10 +3547,10 @@
     "parentCol": 1,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Faces and Phases（シリーズ）",
+    "author": "Zanele Muholi",
+    "year": "2006–",
+    "description": "LGBTQ+コミュニティの白黒ポートレートを通して尊厳と祈りに近い敬意を提示する継続的プロジェクト。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r04c01.jpg",
     "tags": [
       "油彩"
@@ -3562,10 +3562,10 @@
     "parentCol": 1,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "People of the 20th Century（Menschen des 20. Jahrhunderts）",
+    "author": "August Sander",
+    "year": "1920s–30s",
+    "description": "職業や階層を精緻に撮り分けることで、人間存在の普遍性と社会的秩序が荘重に現れる巨編。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r04c02.jpg",
     "tags": [
       "油彩"
@@ -3577,10 +3577,10 @@
     "parentCol": 1,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Le baiser de l'hôtel de ville (The Kiss) ",
+    "author": "Robert Doisneau",
+    "year": "1950",
+    "description": "戦後パリの公的祝祭性と個人の親密性が合わさり、日常の一瞬が聖性を帯びることを示す象徴的写真。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r04c03.jpg",
     "tags": [
       "油彩"
@@ -3592,10 +3592,10 @@
     "parentCol": 1,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Tea Cup Ballet",
+    "author": "Olive Cotton",
+    "year": "1935",
+    "description": "静物の抒情的構成で、日常の対象が静かな崇高さをまとうことを示したオセアニアの代表作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C01-r04c04.jpg",
     "tags": [
       "油彩"
@@ -3607,10 +3607,10 @@
     "parentCol": 2,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Migrant Mother",
+    "author": "Dorothea Lange",
+    "year": "1936",
+    "description": "大恐慌期の苦境を劇的かつ象徴的に表したポートレート。強い感情移入と崇高さを同時に喚起する代表作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r01c01.jpg",
     "tags": [
       "油彩"
@@ -3622,10 +3622,10 @@
     "parentCol": 2,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Lunch Atop a Skyscraper",
+    "author": "Charles C. Ebbets",
+    "year": "1932",
+    "description": "建設現場の鉄骨の上で昼食をとる作業員たちの写真。都市的スリルと劇的な視覚美が同居する一枚。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r01c02.jpg",
     "tags": [
       "油彩"
@@ -3637,10 +3637,10 @@
     "parentCol": 2,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Dovima with Elephants",
+    "author": "Richard Avedon",
+    "year": "1955",
+    "description": "ハイ・ファッションとサーカス的風景を融合させた象徴的ポートレート。優雅さと巨大さの対比が豪華な印象を与える。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r01c03.jpg",
     "tags": [
       "油彩"
@@ -3652,10 +3652,10 @@
     "parentCol": 2,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Steerage",
+    "author": "Alfred Stieglitz",
+    "year": "1907",
+    "description": "近代写真の名作。構図と階層的要素によって、日常の中に荘厳さと劇的な形式美を生む。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r01c04.jpg",
     "tags": [
       "油彩"
@@ -3667,10 +3667,10 @@
     "parentCol": 2,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Moonrise, Hernandez, New Mexico",
+    "author": "Ansel Adams",
+    "year": "1941",
+    "description": "風景写真の金字塔。陰影と光のドラマが荘厳で叙情的な感情を呼び起こす。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r02c01.jpg",
     "tags": [
       "油彩"
@@ -3682,10 +3682,10 @@
     "parentCol": 2,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "V‑J Day in Times Square（“The Kiss”）",
+    "author": "Alfred Eisenstaedt",
+    "year": "1945",
+    "description": "終戦の歓喜を象徴する瞬間撮影。人々の感情が凝縮された、力強く華やかなイメージ。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r02c02.jpg",
     "tags": [
       "油彩"
@@ -3697,10 +3697,10 @@
     "parentCol": 2,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Untitled Film Stills（シリーズ）",
+    "author": "Cindy Sherman",
+    "year": "1977–1980",
+    "description": "映画のワンシーンを思わせる自作のポートレート群。演出的で極めて視覚的、演劇的な華やかさを持つ。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r02c03.jpg",
     "tags": [
       "油彩"
@@ -3712,10 +3712,10 @@
     "parentCol": 2,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Studio portraits",
+    "author": "Seydou Keïta",
+    "year": "1950",
+    "description": "マリのスタジオ写真。被写体の衣装、小物、ポーズが織りなす鮮やかな視覚語彙が華麗さを生む。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r02c04.jpg",
     "tags": [
       "油彩"
@@ -3727,10 +3727,10 @@
     "parentCol": 2,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Seascapes（シリーズ）",
+    "author": "Hiroshi Sugimoto",
+    "year": "1976",
+    "description": "長時間露光による海景の最小主義的表現。静謐さのなかに荘厳さと詩的な輝きが宿る。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r03c01.jpg",
     "tags": [
       "油彩"
@@ -3742,10 +3742,10 @@
     "parentCol": 2,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "La buena fama durmiendo（「眠るよい評判」）",
+    "author": "Manuel Álvarez Bravo",
+    "year": "1939",
+    "description": "メキシコの象徴性を帯びたシュルレアリスム寄りの写真。寓意的で幻想的、視覚的に豊かな一枚。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r03c02.jpg",
     "tags": [
       "油彩"
@@ -3757,10 +3757,10 @@
     "parentCol": 2,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Horse in Motion（連続写真／一コマ）",
+    "author": "Eadweard Muybridge",
+    "year": "1878",
+    "description": "動きの可視化という技術的偉業。連続性と図像のリズムが視覚的な壮麗さを生む歴史的作品。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r03c03.jpg",
     "tags": [
       "油彩"
@@ -3772,10 +3772,10 @@
     "parentCol": 2,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Sunbaker",
+    "author": "Max Dupain",
+    "year": "1937",
+    "description": "シンプルな人体と光の構成が、太陽の下での強烈な生の感覚と美的な歓喜を表出するオーストラリアの代表作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r03c04.jpg",
     "tags": [
       "油彩"
@@ -3787,10 +3787,10 @@
     "parentCol": 2,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "99 Cent II Diptychon",
+    "author": "Andreas Gursky",
+    "year": "2001",
+    "description": "色彩と反復が生む視覚的饒舌さ。消費社会の絢爛さを大判で見せつける現代写真の代表例。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r04c01.jpg",
     "tags": [
       "油彩"
@@ -3802,11 +3802,11 @@
     "parentCol": 2,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
-    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r04c02.jpg",
+    "title": "Le Violon d'Ingres",
+    "author": "Man Ray",
+    "year": "1924",
+    "description": "伝統的なポートレートを玩具化しつつ官能的な美を演出したシュルレアリストの傑作。視覚的に極めて印象的。\n",
+    "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r04c02.png",
     "tags": [
       "油彩"
     ]
@@ -3817,10 +3817,10 @@
     "parentCol": 2,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Flowers（静物・花のシリーズ）",
+    "author": "Irving Penn",
+    "year": "1970",
+    "description": "精緻な照明と構図によって花をほぼ彫刻的に提示する静物群。色彩と形の豊かさが観者に華やかな感覚を与える。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r04c03.jpg",
     "tags": [
       "油彩"
@@ -3832,10 +3832,10 @@
     "parentCol": 2,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "American Gothic, Washington, D.C.",
+    "author": "Gordon Parks",
+    "year": "1942",
+    "description": "政治的メッセージを帯びた劇的な構成。モチーフの持つ象徴性が強い感情的響きをもたらす一枚。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C02-r04c04.jpg",
     "tags": [
       "油彩"
@@ -3847,10 +3847,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Pond—Moonlight",
+    "author": "Edward Steichen",
+    "year": "1904",
+    "description": "優美に着彩した初期写真で、風景を絵画的に詩的表現した代表作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r01c01.jpg",
     "tags": [
       "油彩"
@@ -3862,10 +3862,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Boulevard du Temple",
+    "author": "Louis Daguerre",
+    "year": "1838",
+    "description": "ダゲレオタイプの初期作例で人間を写した最古級の写真の一つ。静謐で時代を超えた優雅さを感じさせる。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r01c02.jpg",
     "tags": [
       "油彩"
@@ -3877,10 +3877,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Ophelia",
+    "author": "Julia Margaret Cameron",
+    "year": "1867",
+    "description": "文学的主題をドラマチックに撮影したヴィクトリア朝のポートレイト。柔らかな焦点と詩的構図が優美。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r01c03.jpg",
     "tags": [
       "油彩"
@@ -3892,10 +3892,10 @@
     "parentCol": 3,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Magnolia Blossom",
+    "author": "Imogen Cunningham",
+    "year": "1925",
+    "description": "植物を彫刻的に捉えた精緻な白黒写真。輪郭と質感の美しさが静かな気品を生む。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r01c04.jpg",
     "tags": [
       "油彩"
@@ -3907,10 +3907,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Mainbocher Corset",
+    "author": "Horst P. Horst",
+    "year": "1939",
+    "description": "モード写真の古典。身体と衣装を彫刻的に配置し、高貴で洗練された美を提示する。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r02c01.jpg",
     "tags": [
       "油彩"
@@ -3922,10 +3922,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Brown Sisters（シリーズ）",
+    "author": "Nicholas Nixon",
+    "year": "1975",
+    "description": "毎年同じ構図で撮影された家族ポートレイト。継続する時間性と静謐な佇まいが控えめな優雅さを与える。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r02c02.jpg",
     "tags": [
       "油彩"
@@ -3937,10 +3937,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Equivalents (雲のシリーズ) ",
+    "author": "Alfred Stieglitz",
+    "year": "1930s",
+    "description": "抽象的な雲の連作。簡潔なモチーフと深い詩情が精神的な優雅さを喚起する。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r02c03.jpg",
     "tags": [
       "油彩"
@@ -3952,10 +3952,10 @@
     "parentCol": 3,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Winston Churchill（肖像）",
+    "author": "Yousuf Karsh",
+    "year": "1941",
+    "description": "力強さと端正さを兼ね備えた肖像。光と影の処理が威厳ある美を作り出す。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r02c04.jpg",
     "tags": [
       "油彩"
@@ -3967,10 +3967,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
+    "title": "Paris by Night（シリーズ）",
+    "author": "Brassaï",
     "year": "2025",
-    "description": "これはテストデータです\n",
+    "description": "ビーチでの直立肖像群。簡潔で忠実な表現が繊細な美と優雅さを際立たせる。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r03c01.jpg",
     "tags": [
       "油彩"
@@ -3982,10 +3982,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Beach Portraits（シリーズ）",
+    "author": "Rineke Dijkstra",
+    "year": "2001",
+    "description": "ビーチでの直立肖像群。簡潔で忠実な表現が繊細な美と優雅さを際立たせる。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r03c02.jpg",
     "tags": [
       "油彩"
@@ -3997,10 +3997,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Yangtze（揚子江）シリーズ",
+    "author": "Nadav Kander ",
+    "year": "2004",
+    "description": "大河の風景を静謐で詩的に撮ったカラー連作。スケール感と抒情性が深い優雅さをもたらす。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r03c03.jpg",
     "tags": [
       "油彩"
@@ -4012,10 +4012,10 @@
     "parentCol": 3,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Immediate Family（シリーズ）",
+    "author": "Sally Mann ",
+    "year": "1992",
+    "description": "家族を主題にした白黒写真群。親密さと古典的な構図が持つ詩的な優雅さが特徴。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r03c04.jpg",
     "tags": [
       "油彩"
@@ -4027,10 +4027,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Changing New York（ニューヨークの変貌）（シリーズ） ",
+    "author": "Berenice Abbott",
+    "year": "1935",
+    "description": "都市の形態を明快に捉えたドキュメンタリー。線と面の構成が都会的で洗練された美を示す。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r04c01.jpg",
     "tags": [
       "油彩"
@@ -4042,10 +4042,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Seascape（Sète などの海景）",
+    "author": "Gustave Le Gray",
+    "year": "c.1856",
+    "description": "19世紀の海景写真。大気表現と階調が絵画的な優雅さを生む古典作例。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r04c02.jpg",
     "tags": [
       "油彩"
@@ -4057,10 +4057,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "John Lennon and Yoko Ono（横たわるジョンとオノ・ヨーコ）",
+    "author": "Annie Leibovitz",
+    "year": "1980",
+    "description": "雑誌撮影の代表的ポートレイト。親密で叙情的な構図が強い美的印象を残す。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r04c03.jpg",
     "tags": [
       "油彩"
@@ -4072,10 +4072,10 @@
     "parentCol": 3,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Identical Twins, Roselle, NJ",
+    "author": "Diane Arbus",
+    "year": "1967",
+    "description": "対称性と静謐さを通じて独特の端正さを生むポートレイト。形式の均衡が見た者に強い美感を与える。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C03-r04c04.jpg",
     "tags": [
       "油彩"
@@ -4087,10 +4087,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Raising the Flag on Iwo Jima",
+    "author": "Joe Rosenthal",
+    "year": "1945",
+    "description": "第二次大戦末期の勝利の瞬間をとらえた劇的な群像写真。躍動感と集団の高揚が強烈に伝わる。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r01c01.jpg",
     "tags": [
       "油彩"
@@ -4102,10 +4102,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Terror of War (Napalm Girl)",
+    "author": "Nick Ut",
+    "year": "1972",
+    "description": "ベトナム戦争の悲劇を伝えながら、飛び散る動きと悲痛な動体感が見る者を揺さぶる一枚。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r01c02.jpg",
     "tags": [
       "油彩"
@@ -4117,10 +4117,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Kiss of Life",
+    "author": "Rocco Morabito",
+    "year": "1967",
+    "description": "電力作業員同士の救命瞬間を捉えたスリリングな写真。即時性と人間的なエネルギーが際立つ。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r01c03.jpg",
     "tags": [
       "油彩"
@@ -4132,10 +4132,10 @@
     "parentCol": 4,
     "modalRow": 1,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Muhammad Ali standing over Sonny Liston",
+    "author": "Neil Leifer",
+    "year": "1965",
+    "description": "勝利直後に高揚するチャンピオンのポーズはスポーツ写真の象徴。動と静のコントラストが強烈。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r01c04.jpg",
     "tags": [
       "油彩"
@@ -4147,10 +4147,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Falling Soldier",
+    "author": "Robert Capa",
+    "year": "1936",
+    "description": "戦闘の瞬間をとらえた決定的瞬間写真。激烈な動きと歴史性が結びつく代表作。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r02c01.jpg",
     "tags": [
       "油彩"
@@ -4162,10 +4162,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Dali Atomicus",
+    "author": "Philippe Halsman",
+    "year": "1948",
+    "description": "サルバドール・ダリと飛翔物を同時に写し出したシュールかつ躍動的な構成。跳躍と重力の感覚が刺激的。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r02c02.jpg",
     "tags": [
       "油彩"
@@ -4177,10 +4177,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Milk crown / high‑speed milk photography ",
+    "author": "Harold Edgerton",
+    "year": "1950s",
+    "description": "超短時間露光で「瞬間」を視覚化したシリーズ。動きの瞬発性と視覚的快感が強い。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r02c03.jpg",
     "tags": [
       "油彩"
@@ -4192,10 +4192,10 @@
     "parentCol": 4,
     "modalRow": 2,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Einstein sticking out his tongue",
+    "author": "Arthur Sasse",
+    "year": "1951",
+    "description": "偉人の表情の奔放さを切り取った一枚。ユーモアと活気が伝わり元気づけられる。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r02c04.jpg",
     "tags": [
       "油彩"
@@ -4207,10 +4207,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "The Vulture and the Little Girl",
+    "author": "Kevin Carter",
+    "year": "1993",
+    "description": "厳しい状況下での強烈な瞬間性が見る者を揺さぶる写真。躍動というよりは緊迫の力を持つ歴史的作例。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r03c01.jpg",
     "tags": [
       "油彩"
@@ -4222,10 +4222,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Bob Beamon — 1968 Mexico City（ボブ・ビーモンの跳躍の記録写真／五輪場面）",
+    "author": "",
+    "year": "1968",
+    "description": "人間の身体が空中で止まったように見える瞬間は、躍動と高揚を象徴するスポーツ写真の名場面。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r03c02.jpg",
     "tags": [
       "油彩"
@@ -4237,10 +4237,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Capa’s D‑Day photographs（ノルマンディー上陸の報道写真群）",
+    "author": "Robert Capa",
+    "year": "1944",
+    "description": "混乱と動きの渦中で撮られた現場記録。躍動する人間群像の迫力と歴史的臨場感が強い。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r03c03.jpg",
     "tags": [
       "油彩"
@@ -4252,10 +4252,10 @@
     "parentCol": 4,
     "modalRow": 3,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Henri Cartier‑Bresson の動的スナップ群　“Rue Mouffetard, Paris” など",
+    "author": "Henri Cartier‑Bresson",
+    "year": "1960",
+    "description": "決定的瞬間を捉えるスナップ群は日常の躍動とユーモアを鋭く伝える\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r03c04.jpg",
     "tags": [
       "油彩"
@@ -4267,10 +4267,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 1,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Eikoh Hosoe — Kamaitachi シリーズ",
+    "author": "Eikoh Hosoe",
+    "year": "1969",
+    "description": "身体的動作と儀礼的パフォーマンスを結びつけた視覚詩。躍動的なポーズと連続性が強い印象を与える。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r04c01.jpg",
     "tags": [
       "油彩"
@@ -4282,10 +4282,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 2,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Ojeikere — Nigerian Hairstyles（ヘアスタイル連作） ",
+    "author": "J. D. 'Okhai Ojeikere",
+    "year": "1960s–80s",
+    "description": "多様な髪型の連続撮影はリズム感と図像の動き、視覚的エネルギーを生む民族誌的名作群。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r04c02.jpg",
     "tags": [
       "油彩"
@@ -4297,10 +4297,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 3,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Rineke Dijkstra — Beach Portraits（若者の直立ポートレート連作）",
+    "author": "Rineke Dijkstra",
+    "year": "1990s–2000s",
+    "description": "単純な構図だが被写体の緊張と活力が直截に伝わるシリーズ。個々の若さと動的な存在感が魅力。\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r04c03.jpg",
     "tags": [
       "油彩"
@@ -4312,10 +4312,10 @@
     "parentCol": 4,
     "modalRow": 4,
     "modalCol": 4,
-    "title": "テスト作品",
-    "author": "テスト作家",
-    "year": "2025",
-    "description": "これはテストデータです\n",
+    "title": "Sebastião Salgado — Workers / Gold series（動的群像の力を示す連作）",
+    "author": "Sebastião Salgado",
+    "year": "1980s–2000s",
+    "description": "人間の労働や活動を壮麗に俯瞰した連作。大規模な群像の動きがエネルギーを放つ\n",
     "imageUrl": "https://cf268321.cloudfree.jp/art_matrix/img_files/R02C04-r04c04.jpg",
     "tags": [
       "油彩"

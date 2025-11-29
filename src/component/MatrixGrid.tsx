@@ -159,6 +159,7 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           ・論理性や客観性を求められない。
           ・散漫で学術的には最も遅れている。せいぜいカタログ目録的な分類ていどしか実在していない。
           ・感情に訴える表現技法
+          ・「私の知ってるXXXXがない！」とご批評ご不満の向きもあるだろう。
         </p>
       </div>
     </div>

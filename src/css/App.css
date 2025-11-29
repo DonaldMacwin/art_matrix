@@ -141,6 +141,7 @@
   gap: 16px;
   align-items: stretch;
   height: 100%;
+  min-height: 0; /* 追加: Flex 子が正しく縮むようにする */
 }
 
 .detail-left {
@@ -173,14 +174,37 @@
   min-width: 240px;
   display: flex;
   flex-direction: column;
+  min-height: 0; /* 子要素が縮むことを許可してスクロールを有効にする */
+  /* 明示的に親の高さを継承させる（これで内部 flex が期待通り動く） */
+  height: 100%;
 }
 
 .detail-right-inner {
   padding: 12px;
   display: flex;
   flex-direction: column;
-  height: 100%;
   border-radius: 6px;
+  min-height: 0;
+
+  /* 明示的に高さを与えてスクロール領域を作る（detail-container の上下パディング 16px ×2 を引く） */
+  height: calc(100vh - 32px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  /* スクロールバー非表示 */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.detail-right-inner::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* detail-description は親でスクロールさせる（不要なら戻す） */
+.detail-description {
+  overflow: visible;
+  flex: 0 0 auto;
 }
 
 .detail-category {
@@ -205,6 +229,22 @@
   overflow-y: auto;
   line-height: 2.25;
   font-size: 1.25em;
+  flex: 1 1 auto;     /* 残り領域を占有してスクロール可能にする */
+  min-height: 0;      /* 重要: 子要素が正しく縮むようにする */
+  max-height: 100%;   /* 親領域内に収める */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  touch-action: auto; /* タッチ操作でのスクロール有効化 */
+  pointer-events: auto;
+  /* デバッグ用の薄い背景（確認後削除可） */
+  background: rgba(255,255,255,0.0);
+}
+
+/* WebKit ブラウザのスクロールバーを非表示にする */
+.detail-description::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 /* 戻るボタン用（neumorph-btn と組み合わせて使う） */

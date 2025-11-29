@@ -186,12 +186,12 @@
   border-radius: 6px;
   min-height: 0;
 
-  /* 明示的に高さを与えてスクロール領域を作る（detail-container の上下パディング 16px ×2 を引く） */
-  height: calc(100vh - 32px);
-  overflow: auto;
+  /* 親内で伸縮する（高さを子に委ね、戻るボタンを常に表示できるようにする） */
+  flex: 1 1 auto;
+  overflow: visible;
+
   -webkit-overflow-scrolling: touch;
 
-  /* スクロールバー非表示 */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -201,41 +201,31 @@
   height: 0;
 }
 
-/* detail-description は親でスクロールさせる（不要なら戻す） */
-.detail-description {
-  overflow: visible;
-  flex: 0 0 auto;
-}
-
-.detail-category {
-  text-align: right;
-  margin: 0 0 1em 0;
-}
-
-.detail-title {
-  margin-top: 0;
-}
-
-.detail-meta {
-  color: #555;
-  margin-bottom: 8px;
-}
-
+/* detail-description は親で切替制御するので内部スクロールを無効化 */
 .detail-description {
   margin-top: 8px;
   white-space: pre-wrap;
   color: #333;
   text-align: left;
-  overflow-y: auto;
-  line-height: 2.25;
-  font-size: 1.25em;
-  flex: 1 1 auto;     /* 残り領域を占有してスクロール可能にする */
-  min-height: 0;      /* 重要: 子要素が正しく縮むようにする */
-  max-height: 100%;   /* 親領域内に収める */
+
+  /* 高さを抑えて戻るボタンが見えるようにする */
+  overflow: auto;
+  max-height: 50vh;   /* ← ここを小さくしました（必要ならさらに調整してください） */
+
+  /* 末尾の余白は控えめに */
+  padding-bottom: 2.5em;
+
+  /* 親内で正しく縮むように */
+  flex: 1 1 auto;
+  min-height: 0;
+
+  line-height: 2.5;
+  font-size: 1.0em;
+
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-  touch-action: auto; /* タッチ操作でのスクロール有効化 */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
   pointer-events: auto;
   /* デバッグ用の薄い背景（確認後削除可） */
   background: rgba(255,255,255,0.0);
@@ -258,5 +248,21 @@
   padding: 8px 14px;
   border-radius: 8px;
 }
+
+/* 画面切替フェード（ホワイトアウト／ホワイトイン） */
+ .fade-overlay {
+   position: fixed;
+   inset: 0;
+   background: #ffffff;
+   opacity: 0;
+   transition: opacity 180ms ease;
+   pointer-events: none;
+   z-index: +3;
+ }
+ .fade-overlay.active {
+   opacity: 1;
+   /* pointer-events は none のままにしても良い（操作ロック不要ならそのまま） */
+   z-index: +4;
+ }
 
 /* end of DetailPage styles */

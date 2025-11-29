@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { ROW_LABELS, COL_LABELS } from '../common/labels'
@@ -24,13 +24,24 @@ export default function DetailPage({ id, onBack }: Props) {
   const [items, setItems] = useState<({ id: string } & DetailData)[]>([])
   // 現在表示している items のインデックス（0〜items.length-1）
   const [currentIndex, setCurrentIndex] = useState(0)
+  const rightRef = useRef<HTMLDivElement | null>(null)
   const [loading, setLoading] = useState(true)
   const [notFound, setNotFound] = useState(false)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [snapshotExists, setSnapshotExists] = useState<boolean | null>(null)
   const wheelBlockRef = React.useRef<number>(0) // デバウンス用タイムスタンプ
-  const touchStartY = React.useRef<number | null>(null)
-  const DEBOUNCE_MS = 300
+  // 切替の「即時感」をやや緩和する（値を大きく）
+  const DEBOUNCE_MS = 500
+  const FADE_MS = 180
+  const [isFading, setIsFading] = useState(false)
+  const isFadingRef = useRef(false)
+  useEffect(() => { isFadingRef.current = isFading }, [isFading])
+
+  // 最新の items/currentIndex をネイティブハンドラで参照するための refs
+  const itemsRef = useRef(items)
+  const currentIndexRef = useRef(currentIndex)
+  useEffect(() => { itemsRef.current = items }, [items])
+  useEffect(() => { currentIndexRef.current = currentIndex }, [currentIndex])
 
   // id から親セル位置を取得して、行見出し＋列見出しを返す（存在しない場合は id をそのまま返す）
   const getParentLabelFromId = (rawId: string) => {
@@ -109,16 +120,18 @@ export default function DetailPage({ id, onBack }: Props) {
           // parent 指定で16件取得 → items に格納、currentIndex=0 にセット
           const list = await fetchCategoryItems(prefix)
           if (!mounted) return
-          if (!list || list.length === 0) {
+          // imageUrl === 'no_URL' のエントリは除外する
+          const filteredList = (list ?? []).filter(it => it.imageUrl && it.imageUrl !== 'no_URL')
+          if (!filteredList || filteredList.length === 0) {
             setItems([])
             setCurrentIndex(0)
             setNotFound(true)
             setData(null)
             setSnapshotExists(false)
           } else {
-            setItems(list)
+            setItems(filteredList)
             setCurrentIndex(0)
-            setData(list[0] ?? null)
+            setData(filteredList[0] ?? null)
             setNotFound(false)
             setSnapshotExists(true)
           }
@@ -131,11 +144,36 @@ export default function DetailPage({ id, onBack }: Props) {
           if (!mounted) return
           if (snap.exists()) {
             const d = snap.data() as DetailData
-            setData(d)
-            setItems([ { id, ...d } ])
-            setCurrentIndex(0)
+            // 同時に parent の16件を試しに取得して currentIndex を特定する
+            const parentPrefix = id.split('-')[0] ?? id
+            const list = await fetchCategoryItems(parentPrefix)
+            if (!mounted) return
+            // parent list から imageUrl === 'no_URL' を除外して利用
+            const filteredList = (list ?? []).filter(it => it.imageUrl && it.imageUrl !== 'no_URL')
+            if (filteredList && filteredList.length > 0) {
+              // id と一致する要素のインデックスを探す（形式差に寛容に）
+              const suffix = id.includes('-') ? id.split('-').slice(1).join('-') : ''
+              const idx = filteredList.findIndex(it => it.id === id || (suffix && it.id.endsWith(suffix)))
+              const useIndex = idx >= 0 ? idx : 0
+              setItems(filteredList)
+              setCurrentIndex(useIndex)
+              setData(filteredList[useIndex] ?? d)
+            } else {
+              // parent に適切なデータが無ければ、単独ドキュメントを表示するが
+              // 単独ドキュメントの imageUrl が 'no_URL' なら表示しない（notFound 扱い）
+              if (d.imageUrl && d.imageUrl !== 'no_URL') {
+                setItems([{ id, ...d }])
+                setCurrentIndex(0)
+                setData(d)
+              } else {
+                setItems([])
+                setCurrentIndex(0)
+                setData(null)
+                setNotFound(true)
+              }
+            }
             setNotFound(false)
-            setSnapshotExists(true) // 追加: 存在フラグを true に
+            setSnapshotExists(true)
           } else {
             // 見つからなければ notFound
             setData(null)
@@ -162,130 +200,224 @@ export default function DetailPage({ id, onBack }: Props) {
   }, [id])
 
   // --- スクロール／タッチで currentIndex を変更するハンドラ ---
-  const handleWheel = (e: React.WheelEvent<HTMLDivElement>) => {
-    if (!items || items.length === 0) return
-    const now = Date.now()
-    if (now - wheelBlockRef.current < DEBOUNCE_MS) {
-      e.preventDefault()
-      return
-    }
-    const delta = (e as React.WheelEvent).deltaY
-    if (Math.abs(delta) < 10) return
-    wheelBlockRef.current = now
-    if (delta > 0) {
-      setCurrentIndex((i) => Math.min(items.length - 1, i + 1))
-    } else {
-      setCurrentIndex((i) => Math.max(0, i - 1))
-    }
-    e.preventDefault()
-  }
+  // React 側の onWheel / onTouch ハンドラは使わず、
+  // ネイティブ addEventListener(passive:false) を useEffect 内で登録しているため
+  // ここでの React ハンドラ定義は不要（削除）。
 
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    touchStartY.current = e.touches[0]?.clientY ?? null
-  }
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (touchStartY.current == null) return
-    const y = e.touches[0]?.clientY ?? 0
-    const diff = touchStartY.current - y
-    if (Math.abs(diff) < 30) return
-    const now = Date.now()
-    if (now - wheelBlockRef.current < DEBOUNCE_MS) return
-    wheelBlockRef.current = now
-    if (diff > 0) {
-      setCurrentIndex((i) => Math.min(items.length - 1, i + 1))
-    } else {
-      setCurrentIndex((i) => Math.max(0, i - 1))
+  // ネイティブリスナを passive:false で登録して preventDefault が使えるようにする
+  useEffect(() => {
+    // helper: 指定要素がその方向にスクロール可能か
+    const canScrollVertically = (el: HTMLElement | null, delta: number) => {
+      if (!el) return false
+      return delta > 0
+        ? el.scrollTop + el.clientHeight < el.scrollHeight - 1
+        : el.scrollTop > 0
     }
-    touchStartY.current = null
-    e.preventDefault()
-  }
+
+    const wheelHandler = (ev: WheelEvent) => {
+      const delta = ev.deltaY
+      // find current description element in DOM
+      const desc = document.querySelector('.detail-description') as HTMLElement | null
+
+      // If description exists and can scroll in this direction, scroll it and allow native behavior
+      if (desc && canScrollVertically(desc, delta)) {
+        // perform manual scroll so it works regardless of pointer position
+        desc.scrollTop += delta
+        ev.preventDefault()
+        return
+      }
+
+      // If description exists but cannot scroll further in this direction, advance index
+      if (!itemsRef.current || itemsRef.current.length === 0) return
+      const now = Date.now()
+      if (now - wheelBlockRef.current < DEBOUNCE_MS) {
+        ev.preventDefault()
+        return
+      }
+      // 小さなノイズで即切替されないように閾値を上げる
+      if (Math.abs(delta) < 20) return
+      wheelBlockRef.current = now
+
+      // フェード付きで切替える（フェード中は多重トリガを防止）
+      if (isFadingRef.current) {
+        ev.preventDefault()
+        return
+      }
+      const doIndexChange = (nextIndex: number) => {
+        isFadingRef.current = true
+        setIsFading(true)
+        // ブロック長めにセット
+        wheelBlockRef.current = Date.now() + DEBOUNCE_MS + FADE_MS * 2
+        setTimeout(() => {
+          setCurrentIndex(nextIndex)
+          // フェードアウト後に解除
+          setTimeout(() => {
+            isFadingRef.current = false
+            setIsFading(false)
+          }, FADE_MS)
+        }, FADE_MS)
+      }
+
+      if (delta > 0) {
+        const next = Math.min(itemsRef.current.length - 1, currentIndexRef.current + 1)
+        if (next !== currentIndexRef.current) doIndexChange(next)
+      } else {
+        const next = Math.max(0, currentIndexRef.current - 1)
+        if (next !== currentIndexRef.current) doIndexChange(next)
+      }
+      ev.preventDefault()
+    }
+
+    // touch handlers for mobile: similar logic
+    let touchStartYLocal: number | null = null
+    const touchStart = (ev: TouchEvent) => { touchStartYLocal = ev.touches[0]?.clientY ?? null }
+    const touchMove = (ev: TouchEvent) => {
+      if (touchStartYLocal == null) return
+      const y = ev.touches[0]?.clientY ?? 0
+      const diff = touchStartYLocal - y
+      // タッチスワイプの閾値をやや大きくして誤爆を減らす
+      if (Math.abs(diff) < 30) return
+
+      const desc = document.querySelector('.detail-description') as HTMLElement | null
+      if (desc && canScrollVertically(desc, diff)) {
+        desc.scrollTop += diff
+        ev.preventDefault()
+        return
+      }
+
+      const now = Date.now()
+      if (now - wheelBlockRef.current < DEBOUNCE_MS) { ev.preventDefault(); return }
+      wheelBlockRef.current = now
+      // touch でも同様にフェード付き切替
+      if (isFadingRef.current) { ev.preventDefault(); return }
+      const doTouchIndexChange = (nextIndex: number) => {
+        isFadingRef.current = true
+        setIsFading(true)
+        wheelBlockRef.current = Date.now() + DEBOUNCE_MS + FADE_MS * 2
+        setTimeout(() => {
+          setCurrentIndex(nextIndex)
+          setTimeout(() => {
+            isFadingRef.current = false
+            setIsFading(false)
+          }, FADE_MS)
+        }, FADE_MS)
+      }
+      if (diff > 0) {
+        const next = Math.min(itemsRef.current.length - 1, currentIndexRef.current + 1)
+        if (next !== currentIndexRef.current) doTouchIndexChange(next)
+      } else {
+        const next = Math.max(0, currentIndexRef.current - 1)
+        if (next !== currentIndexRef.current) doTouchIndexChange(next)
+      }
+      touchStartYLocal = null
+      ev.preventDefault()
+    }
+
+    // register on document so pointer position doesn't matter
+    const wheelOptions: AddEventListenerOptions = { passive: false }
+    const touchMoveOptions: AddEventListenerOptions = { passive: false }
+    document.addEventListener('wheel', wheelHandler, wheelOptions)
+    document.addEventListener('touchstart', touchStart, { passive: true })
+    document.addEventListener('touchmove', touchMove, touchMoveOptions)
+
+    return () => {
+      document.removeEventListener('wheel', wheelHandler, wheelOptions)
+      document.removeEventListener('touchstart', touchStart as EventListener)
+      document.removeEventListener('touchmove', touchMove as EventListener)
+    }
+  }, []) // handlers read latest via refs
 
   return (
     <div className="detail-container">
-      {loading ? (
-        <p>読み込み中…</p>
-      ) : notFound ? (
-        <div>
-          <p>データが見つかりませんでした（Firestore の 'details' コレクションにドキュメント {id} があるか確認してください）。</p>
-          <details style={{ marginTop: 8, whiteSpace: 'pre-wrap' }}>
-            <summary>デバッグ情報を表示</summary>
-            <div style={{ marginTop: 8 }}>
-              <div><strong>snapshot.exists():</strong> {String(snapshotExists)}</div>
-              <div style={{ marginTop: 6 }}><strong>error:</strong> {errorMessage ?? 'なし'}</div>
-            </div>
-          </details>
-          <div style={{ marginTop: 12 }}>
-            <button
-              className="neumorph-btn detail-back-button"
-              onClick={onBack}
-              aria-label="戻る"
-            >
-              &larr; 戻る
-            </button>
-          </div>
-        </div>
-      ) : (
-        <div>
-          <div className="detail-main">
-            <div className="detail-left">
-              <div className="detail-image-wrapper">
-                {/* 左画像は items または 単一 data の最初を表示 */}
-                <img
-                  src={items?.[currentIndex]?.imageUrl ?? data?.imageUrl ?? ''}
-                  alt={items?.[currentIndex]?.title ?? data?.title ?? '作品画像'}
-                  className="detail-image"
-                />
-              </div>
-            </div>
+      {/* フェードオーバーレイ（isFading が true のとき白で覆う） */}
+      <div className={`fade-overlay ${isFading ? 'active' : ''}`} />
+       {loading ? (
+         <p>読み込み中…</p>
+       ) : notFound ? (
+         <div>
+           <p>データが見つかりませんでした（Firestore の 'details' コレクションにドキュメント {id} があるか確認してください）。</p>
+           <details style={{ marginTop: 8, whiteSpace: 'pre-wrap' }}>
+             <summary>デバッグ情報を表示</summary>
+             <div style={{ marginTop: 8 }}>
+               <div><strong>snapshot.exists():</strong> {String(snapshotExists)}</div>
+               <div style={{ marginTop: 6 }}><strong>error:</strong> {errorMessage ?? 'なし'}</div>
+             </div>
+           </details>
+           <div style={{ marginTop: 12 }}>
+             <button
+               className="neumorph-btn detail-back-button"
+               onClick={onBack}
+               aria-label="戻る"
+             >
+               &larr; 戻る
+             </button>
+           </div>
+         </div>
+       ) : (
+         <div>
+           <div className="detail-main">
+             <div className="detail-left">
+               <div className="detail-image-wrapper">
+                 {/* 左画像は items または 単一 data の最初を表示 */}
+                 <img
+                   src={items?.[currentIndex]?.imageUrl ?? data?.imageUrl ?? ''}
+                   alt={items?.[currentIndex]?.title ?? data?.title ?? '作品画像'}
+                   className="detail-image"
+                 />
+               </div>
+             </div>
 
-            <div className="detail-right">
-              <div
-                className="detail-right-inner"
-                onWheel={handleWheel}
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-              >
-                {/* items があれば currentIndex のアイテムを1件だけ表示 */}
-                {items && items.length > 0 ? (
-                  (() => {
-                    const it = items[currentIndex]
-                    return (
-                      <section key={it.id} style={{ marginBottom: 28 }}>
-                        <p className="detail-category">カテゴリ：{getParentLabelFromId(it.id)}</p>
-                        <h3 className="detail-title">{it.title ?? '無題'}</h3>
-                        <div className="detail-meta">{it.author ?? '作者不詳'} ({it.year ?? '不明'}年)</div>
-                        <div className="detail-description">
-                          {it.description ?? '説明はありません。'}
-                        </div>
+             <div
+               className="detail-right"
+               ref={rightRef}
+               /* ネイティブリスナを useEffect で登録するので React 側の onWheel はここでは使わない */
+             >
+                <div
+                  className="detail-right-inner"
+                  /* overflow:hidden の領域。イベントは親でキャプチャする */
+                >
+                  {/* items があれば currentIndex のアイテムを1件だけ表示 */}
+                  {items && items.length > 0 ? (
+                    (() => {
+                      const it = items[currentIndex]
+                      return (
+                        <section key={it.id} style={{ marginBottom: 28 }}>
+                          <p className="detail-category">カテゴリ：{getParentLabelFromId(it.id)}</p>
+                          <h3 className="detail-title">{it.title ?? '無題'}</h3>
+                          <div className="detail-meta">{it.author ?? '作者不詳'} ({it.year ?? '不明'}年)</div>
+                          <div className="detail-description">
+                            {it.description ?? '説明はありません。'}
+                          </div>
                       </section>
                     )
                   })()
                 ) : data ? (
-                  <div>
-                    <p className="detail-category">カテゴリ：{getParentLabelFromId(id)}</p>
-                    <h3 className="detail-title">{data.title ?? '無題'}</h3>
-                    <div className="detail-meta">{data.author ?? '作者不詳'} ({data.year ?? '不明'}年)</div>
-                    <div className="detail-description">
-                      {data.description ?? '説明はありません。'}
-                    </div>
-                  </div>
-                ) : null}
+                   <div>
+                     <p className="detail-category">カテゴリ：{getParentLabelFromId(id)}</p>
+                     <h3 className="detail-title">{data.title ?? '無題'}</h3>
+                     <div className="detail-meta">{data.author ?? '作者不詳'} ({data.year ?? '不明'}年)</div>
+                     <div className="detail-description">
+                       {data.description ?? '説明はありません。'}
+                     </div>
+                    {/* 余白は CSS の padding-bottom で確保 */}
+                   </div>
+                 ) : null}
 
-                <div className="detail-back-wrap">
-                  <button
-                    className="neumorph-btn detail-back-button"
-                    onClick={onBack}
-                    aria-label="戻る"
-                  >
-                    &larr; 戻る
-                  </button>
-                </div>
-              </div>
-            </div>
+                 <div className="detail-back-wrap">
+                   <button
+                     className="neumorph-btn detail-back-button"
+                     onClick={onBack}
+                     aria-label="戻る"
+                   >
+                     &larr; 戻る
+                   </button>
+                 </div>
+               </div>
+             </div>
 
-          </div>
-        </div>
-      )}
-    </div>
-  )
+           </div>
+         </div>
+       )}
+     </div>
+   )
 }

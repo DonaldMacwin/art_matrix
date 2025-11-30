@@ -1,7 +1,6 @@
 #root {
   max-width: 96%;
   margin: 0 auto;
-  /*padding: 2rem;*/
   text-align: center;
 }
 
@@ -87,7 +86,6 @@
   height: 100%;
   border: none;
   border-radius: 10px;
-  /* 真っ白な背景にして影だけ残す（ニューモーフィズム風） */
   background: #ffffff;
   box-shadow:
     6px 6px 14px rgba(16, 24, 40, 0.06),
@@ -141,7 +139,7 @@
   gap: 16px;
   align-items: stretch;
   height: 100%;
-  min-height: 0; /* 追加: Flex 子が正しく縮むようにする */
+  min-height: 0;
 }
 
 .detail-left {
@@ -174,8 +172,7 @@
   min-width: 240px;
   display: flex;
   flex-direction: column;
-  min-height: 0; /* 子要素が縮むことを許可してスクロールを有効にする */
-  /* 明示的に親の高さを継承させる（これで内部 flex が期待通り動く） */
+  min-height: 0;
   height: 100%;
 }
 
@@ -185,13 +182,9 @@
   flex-direction: column;
   border-radius: 6px;
   min-height: 0;
-
-  /* 親内で伸縮する（高さを子に委ね、戻るボタンを常に表示できるようにする） */
   flex: 1 1 auto;
   overflow: visible;
-
   -webkit-overflow-scrolling: touch;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -202,32 +195,30 @@
 }
 
 /* detail-description は親で切替制御するので内部スクロールを無効化 */
+.detail-category{
+  text-align: right;
+  font-size: 0.85em;
+}
+.detail-meta{
+  margin :0 0 8vh 0;
+}
 .detail-description {
   margin-top: 8px;
   white-space: pre-wrap;
   color: #333;
   text-align: left;
-
-  /* 高さを抑えて戻るボタンが見えるようにする */
   overflow: auto;
-  max-height: 50vh;   /* ← ここを小さくしました（必要ならさらに調整してください） */
-
-  /* 末尾の余白は控えめに */
+  max-height: 50vh;
   padding-bottom: 2.5em;
-
-  /* 親内で正しく縮むように */
   flex: 1 1 auto;
   min-height: 0;
-
   line-height: 2.5;
   font-size: 1.0em;
-
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   touch-action: auto;
   pointer-events: auto;
-  /* デバッグ用の薄い背景（確認後削除可） */
   background: rgba(255,255,255,0.0);
 }
 
@@ -261,7 +252,6 @@
  }
  .fade-overlay.active {
    opacity: 1;
-   /* pointer-events は none のままにしても良い（操作ロック不要ならそのまま） */
    z-index: +4;
  }
 

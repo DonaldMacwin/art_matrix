@@ -27,7 +27,6 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
                 const snap = await getDoc(doc(db, 'details', id))
                 if (snap.exists()) {
                   const data = snap.data() as { imageUrl?: string }
-                  // "no_URL" や不正な値（http/https で始まらないもの）は画像なしと扱う
                   const img = data.imageUrl ?? null
                   if (!img || img === 'no_URL' || typeof img !== 'string' || !/^https?:\/\//.test(img)) {
                     next[key] = null
@@ -51,7 +50,6 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
     return () => { mounted = false }
   }, [parentCell])
 
-  // 存在するサムネだけを抽出して順序（行優先）を維持する
   const entries: { r: number; c: number; url: string }[] = []
   for (let r = 1; r <= SIZE; r++) {
     for (let c = 1; c <= SIZE; c++) {
@@ -67,12 +65,11 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-box" onClick={(e) => e.stopPropagation()}>
         <div style={{ marginTop: 12 }}>
-          {/* 存在するサムネだけを詰めて表示するグリッド */}
           <div
             className="modal-thumb-grid"
             style={{
               display: 'grid',
-              gridTemplateColumns: `repeat(${SIZE}, 56px)`, // 必要に応じてサイズ調整
+              gridTemplateColumns: `repeat(${SIZE}, 56px)`,
               gap: 8,
               justifyContent: 'center',
             }}
@@ -92,7 +89,6 @@ export default function ModalGrid({ parentCell, onClose, onSelectDetail }: Props
                     alt={`thumb ${r},${c}`}
                     className="modal-thumb-img"
                     onError={(e) => {
-                      // 画像が壊れている場合はその要素自体を非表示にしてレイアウトを詰める
                       const btn = (e.currentTarget.closest('button') as HTMLButtonElement | null)
                       if (btn) btn.style.display = 'none'
                     }}

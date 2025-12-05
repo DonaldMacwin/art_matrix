@@ -67,9 +67,9 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
 
   return (
     <div>
-      <p>芸術たしなみ図鑑</p>
+      <p>芸術たしなみマトリックス</p>
 
-      <div style={{ overflow: 'auto', maxHeight: '85vh' }}>
+      <div style={{ overflow: 'auto', maxHeight: '65vh' }}>
         <table style={{ borderCollapse: 'collapse' }}>
           <thead>
             <tr>
@@ -150,6 +150,8 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           ・感情に訴える表現技法
           ・「私の知ってるXXXXがない！」とご批評ご不満の向きもあるだろう。
           ・1ジャンルを形成しているものの、境界は曖昧で、政治経済／社会／歴史／哲学宗教の諸学問から逸脱疎外されしがちだった技術者たちが長い年月をかけ築き上げて来たジャンルだ。
+          ・経済的には興行活動と資産運用商品。
+          ・芸術家の殆どは「美術史に名を残す」ことを目指しているだけの下世話な人々。
         </p>
       </div>
     </div>

@@ -123,6 +123,11 @@
   box-shadow: 0 0 0 3px rgba(0, 114, 216, 0.18);
 }
 
+.guide-text{
+  max-Width: 100%;
+  margin-Top: 1em;
+}
+
 /* ===== DetailPage 用スタイル ===== */
 .detail-container {
   width: 100vw;
@@ -202,13 +207,21 @@
 .detail-meta{
   margin :0 0 8vh 0;
 }
+
+.detail-title {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "MS PMincho", "Noto Serif JP", "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 2.0rem;
+  line-height: 1.75;
+}
+
 .detail-description {
   margin-top: 8px;
   white-space: pre-wrap;
   color: #333;
   text-align: left;
   overflow: auto;
-  max-height: 50vh;
+  max-height: 35vh;
   padding-bottom: 2.5em;
   flex: 1 1 auto;
   min-height: 0;
@@ -256,3 +269,4 @@
  }
 
 /* end of DetailPage styles */
+

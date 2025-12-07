@@ -142,8 +142,8 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           }}
         />
       )}
-      <div style={{ maxWidth: '50vw', margin: '3em auto', textAlign: 'left', padding: '0 8px', lineHeight: '2.0' }}>
-        <p style={{ margin: 0 }}>
+      <div style={{ maxWidth: '50vw', margin: '3em auto 9em auto', textAlign: 'left', padding: '0 8px', lineHeight: '2.0' }}>
+        <p className='guide-text'>
           芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。芸術とは感情喚起の分野である、とかなんとかここにテキストがはいる。
           ・論理性や客観性を求められない。学問としては最も論理性に劣っている。
           ・散漫で学術的には最も遅れている。せいぜいカタログ目録的な分類ていどしか実在していない。
@@ -152,7 +152,16 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           ・1ジャンルを形成しているものの、境界は曖昧で、政治経済／社会／歴史／哲学宗教の諸学問から逸脱疎外されしがちだった技術者たちが長い年月をかけ築き上げて来たジャンルだ。
           ・経済的には興行活動と資産運用商品。
           ・芸術家の殆どは「美術史に名を残す」ことを目指しているだけの下世話な人々。
+          ・芸術大学のそもそもの発端が「工芸品の製造技術者を養成するための学校」だった。
         </p>
+        <h2 className='guide-text'>これから深めてゆきたいかたのために</h2>
+        <p className='guide-text'>現2020年代時点では以下の別12フィールドへ飛び込むことを奨めたい。それぞれのフィールドでどのような学究が進められているかを簡単に紹介した学術俯瞰サイト『13個のゼリー』<a href="https://cf268321.cloudfree.jp/13jellies/" target="_blank" rel="noopener noreferrer">https://cf268321.cloudfree.jp/13jellies/ </a>も用意した。<br /><br />
+          言語／哲学／数学／化学／物理<br />
+          時空間（地理／歴史／天文／気象／地学）<br />
+          社会／医学／生物<br />
+          政治経済／産業技術</p>
+        <a href="https://cf268321.cloudfree.jp/13jellies/" target="_blank" rel="noopener noreferrer"><img src="https://cf268321.cloudfree.jp/13jellies/asset/img/13jellies_A.png" alt="" className='guide-text' /></a>
+        <p className='guide-text'>あなたのこれからに、より深くより広い視野がもたらされますよう。</p>
       </div>
     </div>
   )

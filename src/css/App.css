@@ -123,9 +123,33 @@
   box-shadow: 0 0 0 3px rgba(0, 114, 216, 0.18);
 }
 
+/* disabled のときは hover の青背景を出さない */
+.neumorph-btn[disabled],
+.neumorph-btn:disabled {
+  background: #ffffff !important;
+  color: #243447 !important;
+  box-shadow:
+    6px 6px 14px rgba(16, 24, 40, 0.06),
+    -6px -6px 14px rgba(255, 255, 255, 0.95),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.6) !important;
+  transform: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+/* hover 時の青化を完全に無効化 */
+.neumorph-btn[disabled]:hover,
+.neumorph-btn:disabled:hover {
+  background: #ffffff !important;
+  color: #243447 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
 .guide-text{
   max-Width: 100%;
   margin-Top: 1em;
+  line-height: 2.75;
 }
 
 /* ===== DetailPage 用スタイル ===== */
@@ -199,7 +223,6 @@
   height: 0;
 }
 
-/* detail-description は親で切替制御するので内部スクロールを無効化 */
 .detail-category{
   text-align: right;
   font-size: 0.85em;
@@ -213,6 +236,8 @@
   font-weight: 900;
   font-size: 2.0rem;
   line-height: 1.75;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .detail-description {
@@ -267,6 +292,4 @@
    opacity: 1;
    z-index: +4;
  }
-
-/* end of DetailPage styles */
-
+/* ===== ここまで DetailPage 用スタイル ===== */

@@ -290,88 +290,88 @@ export default function DetailPage({ id, onBack }: Props) {
   return (
     <div className="detail-container">
       <div className={`fade-overlay ${isFading ? 'active' : ''}`} />
-       {loading ? (
-         <p>読み込み中…</p>
-       ) : notFound ? (
-         <div>
-           <p>データが見つかりませんでした（Firestore の 'details' コレクションにドキュメント {id} があるか確認してください）。</p>
-           <details style={{ marginTop: 8, whiteSpace: 'pre-wrap' }}>
-             <summary>デバッグ情報を表示</summary>
-             <div style={{ marginTop: 8 }}>
-               <div><strong>snapshot.exists():</strong> {String(snapshotExists)}</div>
-               <div style={{ marginTop: 6 }}><strong>error:</strong> {errorMessage ?? 'なし'}</div>
-             </div>
-           </details>
-           <div style={{ marginTop: 12 }}>
-             <button
-               className="neumorph-btn detail-back-button"
-               onClick={onBack}
-               aria-label="戻る"
-             >
-               &larr; 戻る
-             </button>
-           </div>
-         </div>
-       ) : (
-         <div>
-           <div className="detail-main">
-             <div className="detail-left">
-               <div className="detail-image-wrapper">
-                 <img
-                   src={items?.[currentIndex]?.imageUrl ?? data?.imageUrl ?? ''}
-                   alt={items?.[currentIndex]?.title ?? data?.title ?? '作品画像'}
-                   className="detail-image"
-                 />
-               </div>
-             </div>
+      {loading ? (
+        <p>読み込み中…</p>
+      ) : notFound ? (
+        <div>
+          <p>データが見つかりませんでした（Firestore の 'details' コレクションにドキュメント {id} があるか確認してください）。</p>
+          <details style={{ marginTop: 8, whiteSpace: 'pre-wrap' }}>
+            <summary>デバッグ情報を表示</summary>
+            <div style={{ marginTop: 8 }}>
+              <div><strong>snapshot.exists():</strong> {String(snapshotExists)}</div>
+              <div style={{ marginTop: 6 }}><strong>error:</strong> {errorMessage ?? 'なし'}</div>
+            </div>
+          </details>
+          <div style={{ marginTop: 12 }}>
+            <button
+              className="neumorph-btn detail-back-button"
+              onClick={onBack}
+              aria-label="戻る"
+            >
+              &larr; 戻る
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div>
+          <div className="detail-main">
+            <div className="detail-left">
+              <div className="detail-image-wrapper">
+                <img
+                  src={items?.[currentIndex]?.imageUrl ?? data?.imageUrl ?? ''}
+                  alt={items?.[currentIndex]?.title ?? data?.title ?? '作品画像'}
+                  className="detail-image"
+                />
+              </div>
+            </div>
 
-             <div
-               className="detail-right"
-               ref={rightRef}
-             >
-                <div
-                  className="detail-right-inner"
-                >
-                  {items && items.length > 0 ? (
-                    (() => {
-                      const it = items[currentIndex]
-                      return (
-                        <section key={it.id} style={{ marginBottom: 28 }}>
-                          <p className="detail-category">カテゴリ：{getParentLabelFromId(it.id)}</p>
-                          <h3 className="detail-title">{it.title ?? '無題'}</h3>
-                          <div className="detail-meta">{it.author ?? '作者不詳'} ({it.year ?? '不明'}年)</div>
-                          <div className="detail-description">
-                            {it.description ?? '説明はありません。'}<br /><br /><br /><br /><br /><br /><br /><br />
-                          </div>
+            <div
+              className="detail-right"
+              ref={rightRef}
+            >
+              <div
+                className="detail-right-inner"
+              >
+                {items && items.length > 0 ? (
+                  (() => {
+                    const it = items[currentIndex]
+                    return (
+                      <section key={it.id} style={{ marginBottom: 28 }}>
+                        <p className="detail-category">カテゴリ：{getParentLabelFromId(it.id)}</p>
+                        <h3 className="detail-title">{it.title ?? '無題'}</h3>
+                        <div className="detail-meta">{it.author ?? '作者不詳'} ({it.year ?? '不明'})</div>
+                        <div className="detail-description">
+                          {it.description ?? '説明はありません。'}<br /><br /><br /><br /><br /><br /><br /><br />
+                        </div>
                       </section>
                     )
                   })()
                 ) : data ? (
-                   <div>
-                     <p className="detail-category">カテゴリ：{getParentLabelFromId(id)}</p>
-                     <h3 className="detail-title">{data.title ?? '無題'}</h3>
-                     <div className="detail-meta">{data.author ?? '作者不詳'} ({data.year ?? '不明'}年)</div>
-                     <div className="detail-description">
-                       {data.description ?? '説明はありません。'}
-                     </div>
-                   </div>
-                 ) : null}
+                  <div>
+                    <p className="detail-category">カテゴリ：{getParentLabelFromId(id)}</p>
+                    <h3 className="detail-title">{data.title ?? '無題'}</h3>
+                    <div className="detail-meta">{data.author ?? '作者不詳'} ({data.year ?? '不明'})</div>
+                    <div className="detail-description">
+                      {data.description ?? '説明はありません。'}
+                    </div>
+                  </div>
+                ) : null}
 
-                 <div className="detail-back-wrap">
-                   <button
-                     className="neumorph-btn detail-back-button"
-                     onClick={onBack}
-                     aria-label="戻る"
-                   >
-                     &larr; 戻る
-                   </button>
-                 </div>
-               </div>
-             </div>
+                <div className="detail-back-wrap">
+                  <button
+                    className="neumorph-btn detail-back-button"
+                    onClick={onBack}
+                    aria-label="戻る"
+                  >
+                    &larr; 戻る
+                  </button>
+                </div>
+              </div>
+            </div>
 
-           </div>
-         </div>
-       )}
-     </div>
-   )
+          </div>
+        </div>
+      )}
+    </div>
+  )
 }

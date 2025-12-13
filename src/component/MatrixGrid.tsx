@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import ModalGrid from './ModalGrid'
 import { ROW_LABELS, COL_LABELS } from '../common/labels'
-// 追加: Firestore を読み、r1c1 が no_URL かどうかを判定
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 
@@ -58,8 +57,6 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
   const [modalOpen, setModalOpen] = useState(false)
   const [activeCell, setActiveCell] = useState<{ r: number; c: number } | null>(null)
   const [hoveredCell, setHoveredCell] = useState<{ r: number; c: number } | null>(null)
-
-  // 親セルごとに r1c1 の imageUrl が "no_URL" かを保持するマップ
   const [disabledParents, setDisabledParents] = useState<Record<string, boolean>>({})
 
   React.useEffect(() => {
@@ -78,7 +75,6 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
                 const d = snap.data() as { imageUrl?: string }
                 next[key] = (d.imageUrl === 'no_URL')
               } else {
-                // ドキュメントがない場合は無効扱いにする（必要なら true/false を調整）
                 next[key] = true
               }
             } catch {
@@ -144,7 +140,6 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
                 {Array.from({ length: COLS }, (_, ci) => (
                   (() => {
                     const isHighlighted = hoveredCell && (hoveredCell.r === ri + 1 || hoveredCell.c === ci + 1)
-                    // disabled ボタン自身は hover で hoveredCell をセットしないので、ここでは行/列ハイライトは常に適用する
                     const parentKey = `${ri + 1}-${ci + 1}`
                     const parentDisabled = Boolean(disabledParents[parentKey])
                     const tdStyle = { ...cellStyle, ...(isHighlighted ? { background: '#BDDCF4' } : {}) }
@@ -158,7 +153,6 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
                           aria-label={`セル ${ri + 1} 行 ${ci + 1} 列`}
                           disabled={parentDisabled}
                           aria-disabled={parentDisabled}
-                          /* style を削除: 見た目は CSS 側で統一し、pointer-events は CSS で無効化済み */
                           style={parentDisabled ? { cursor: 'default' } : undefined}
                         >
                         </button>
@@ -189,8 +183,8 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
       )}
       <div style={{ maxWidth: '50vw', margin: '3em auto 9em auto', textAlign: 'left', padding: '0 8px', lineHeight: '2.0' }}>
         <p className='guide-text'>
-          「この程度を知っていれば、無教養と小馬鹿にはされない」レベルの芸術を一覧で俯瞰できる目録ページが、この藝術たしなみマトリックスだ。<br />17種の表現技法フィールド行と14種の美的感情喚起列の区分を準備した。ぜひ全ジャンルをたしなんでいただきたい。<br />
-          「私よく知るXXXXがない！」とご批評ご不満の向きもあるだろう。<br /><br /><br /></p>
+          「この程度を知っていれば、無教養と小馬鹿にはされない」レベルの芸術を一覧で俯瞰できる目録ページが、この藝術たしなみマトリックスだ。<br />17種の表現技法フィールド行と14種の美的感情を喚起する列の区分を準備した。ぜひ全ジャンルをたしなみ、インスタント教養人を目指していただきたい。<br />
+          「私よく知るXXXXがない！」とご批評ご不満の向きもあるだろう。<br /><br /></p>
         <p className='guide-text'>
           ・論理性や客観性を求められない。学問としては最も論理性に劣っている。
           ・散漫で学術的には最も遅れている。せいぜいカタログ目録的な分類ていどしか実在していない。

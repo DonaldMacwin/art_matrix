@@ -149,6 +149,7 @@
 .guide-text{
   max-Width: 100%;
   margin-Top: 1em;
+  text-align: left;
   line-height: 2.75;
 }
 

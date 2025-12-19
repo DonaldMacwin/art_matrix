@@ -1,14 +1,14 @@
 <html lang="ja">
 
 <head>
-    <?php include "./dist/meta.html"; ?>
-    <script type="module" crossorigin src="./dist/assets/index-BJNmRQ7E.js"></script>
-    <link rel="stylesheet" crossorigin href="./dist/assets/index-Be8GwtYL.css">
+    <?php include "./meta.html"; ?>
+    <script type="module" crossorigin src="./dist/assets/index-DYvebM4T.js"></script>
+    <link rel="stylesheet" crossorigin href="./dist/assets/index-C_qc124y.css">
     <title>藝術たしなみマトリクス</title>
 </head>
 
 <body>
-    <div style="min-height: 100vh; margin:0 auto;">
+    <div style="max-height: 100vh; margin:0 auto;">
         <div id="root"></div>
 
         <?php

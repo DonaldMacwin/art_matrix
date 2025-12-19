@@ -4,6 +4,23 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        // エントリ（メイン JS）を常に同じ名前にする
+        entryFileNames: 'assets/art_matrix.js',
+        // 分割チャンクは名前ベースに（必要なら固定化）
+        chunkFileNames: 'assets/[name].js',
+        // アセット（CSS など）は name を見て CSS を固定化、それ以外は元の拡張子を保持
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'assets/art_matrix.css'
+          }
+          return 'assets/[name][extname]'
+        }
+      }
+    }
+  },
   optimizeDeps: {
     include: [
       '@firebase/app',

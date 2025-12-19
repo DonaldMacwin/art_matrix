@@ -2,8 +2,8 @@
 
 <head>
     <?php include "./meta.html"; ?>
-    <script type="module" crossorigin src="./dist/assets/index-DYvebM4T.js"></script>
-    <link rel="stylesheet" crossorigin href="./dist/assets/index-C_qc124y.css">
+    <script type="module" crossorigin src="./dist/assets/art_matrix.js"></script>
+    <link rel="stylesheet" crossorigin href="./dist/assets/art_matrix.css">
     <title>藝術たしなみマトリクス</title>
 </head>
 

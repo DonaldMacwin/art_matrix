@@ -125,7 +125,7 @@ export default function DetailPage({ id, onBack }: Props) {
         } else {
           const ref = doc(db, 'details', id)
           const snap = await getDoc(ref)
-          console.log('[DetailPage] fetch id=', id, 'exists=', snap.exists(), 'data=', snap.exists() ? snap.data() : null)
+          //console.log('[DetailPage] fetch id=', id, 'exists=', snap.exists(), 'data=', snap.exists() ? snap.data() : null)
           if (!mounted) return
           if (snap.exists()) {
             const d = snap.data() as DetailData

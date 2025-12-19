@@ -100,10 +100,10 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
     : stickyHeaderStyle
 
   return (
-    <div>
+    <div style={{ maxWidth:'920px' }}>
       <h1>藝術たしなみマトリクス</h1>
 
-      <div style={{ overflow: 'auto', maxHeight: '65vh' }}>
+      <div style={{ overflow: 'auto', maxHeight: '65vh', margin: '0 auto' }}>
         <table style={{ borderCollapse: 'collapse' }}>
           <thead>
             <tr>
@@ -181,7 +181,7 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
           }}
         />
       )}
-      <div style={{ maxWidth: '50vw', margin: '3em auto 9em auto'}}>
+      <div style={{ margin: '3em auto 9em auto'}}>
         <p className='guide-text'>
           「この程度を知っていれば、無教養と小馬鹿にはされない」クラスの芸術を一覧で俯瞰できる目録ページが、この藝術たしなみマトリクスだ。<br />17種の表現技法フィールド行と14種の美的感情を喚起する列の区分を準備した。さあ！全ジャンルをたしなみ、インスタント教養人を目指そう。訳知り顔で教養人気取りにぜひ振舞っていただきたい。<br />
           かたや「私のよく知るXXXXがない！」とご批評ご不満の向きもあるだろう。あなたが知るXXXXがとてもマニアックな選択なのか、このページにまだ抜け漏れがあるのかのいずれかだろう。<br /></p>
@@ -190,8 +190,8 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
         <p className='guide-text'>
           芸術は感情へ訴える表現技法アプローチにのみ主軸を据えた、稀有な体系である。体系化はじつに散漫で、せいぜいカタログ目録的な分類ていどしか定義できていない。<br />
           一応半ば哲学と化している範疇内に「美学」というジャンルは存在するが論理体系として雑駁で抜け漏れも多く、客観性よりも固有主観の感情喚起に訴え、芸術は最も論理構築性・網羅性一般化に劣る保守的な分野である。<br />
-          芸術には基本理論体系もなく応用理論もほぼ皆無だ。<br />
-          工学技術がどんどん一般化汎用化を進め産業へ取り込まれ普及する変遷を辿ったのとは対照的である。<br />
+          芸術には共有されている基本理論体系もなく応用理論も皆無だ。<br />
+          工学技術がどんどん一般化汎用化を進め産業へ取り込まれ普及する変遷を辿ったのとは、対照的である。<br />
         </p>
         <br />
         <h2 className='guide-text'>芸術の経緯とプレイヤー</h2>

@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+h1{
+  width:360px;
+  margin: 0.25em auto 0.75em auto;
+}
 /* ModalGrid 用スタイル */
 .modal-overlay {
   position: fixed;

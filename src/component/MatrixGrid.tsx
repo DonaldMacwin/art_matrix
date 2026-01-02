@@ -205,11 +205,11 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
         <br />
         <h2 className='guide-text'>これからさらに深めてゆきたいかたのために</h2>
         <p className='guide-text'>現2020年代時点では以下の別12フィールドへ飛び込むことを奨めたい。どこにも属せなかった芸術家たちのフィールドがどのようなものか比較してみるのも一興だろう。それぞれのフィールドでどのような学究が進められているかを簡単に紹介した学術俯瞰サイト『13個のゼリー』<a href="https://cf268321.cloudfree.jp/13jellies/" target="_blank" rel="noopener noreferrer">https://cf268321.cloudfree.jp/13jellies/ </a>も用意した。<br /><br />
-          言語／哲学／数学／化学／物理<br />
+          言語／哲学宗教／数／化学／物理<br />
           時空間（地理／歴史／天文／気象／地学）<br />
           社会／医学／生物<br />
           政治経済／産業技術</p>
-        <a href="https://cf268321.cloudfree.jp/13jellies/" target="_blank" rel="noopener noreferrer"><img src="https://cf268321.cloudfree.jp/13jellies/asset/img/13jellies_A.png" alt="" className='guide-text' /></a>
+        <a href="https://cf268321.cloudfree.jp/13jellies/"><img src="https://cf268321.cloudfree.jp/13jellies/asset/img/13jellies_A.png" alt="" className='guide-text' /></a>
         <p className='guide-text'>あなたのこれからに、より深くより広い視野がもたらされますよう。</p>
       </div>
     </div>

@@ -39,6 +39,7 @@ export default function DetailPage({ id, onBack }: Props) {
   useEffect(() => { itemsRef.current = items }, [items])
   useEffect(() => { currentIndexRef.current = currentIndex }, [currentIndex])
 
+  // 指定IDから親ラベルを取得
   const getParentLabelFromId = (rawId: string) => {
     const m = rawId.match(/^R(\d+)C(\d+)/i)
     if (!m) return rawId
@@ -49,6 +50,7 @@ export default function DetailPage({ id, onBack }: Props) {
     return `${rowLabel} ／ ${colLabel}`
   }
 
+  // 初回マウント時にスクロールを無効化
   useEffect(() => {
     const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
@@ -56,11 +58,10 @@ export default function DetailPage({ id, onBack }: Props) {
   }, [])
 
   useEffect(() => {
+    // データ取得処理
     let mounted = true
-
-    const pad2 = (n: number) => (n < 10 ? `0${n}` : `${n}`)
-
     // 指定された親IDに基づいて、そのカテゴリ内の全アイテムを取得する
+    const pad2 = (n: number) => (n < 10 ? `0${n}` : `${n}`)
     const fetchCategoryItems = async (parentRaw: string) => {
       const m = parentRaw.match(/^R0?(\d+)C0?(\d+)/i)
       const parentRow = m ? Number(m[1]) : null

@@ -2,9 +2,9 @@
 
 nodeJS: nvm use 22.12.0
 
-DB: https://console.firebase.google.com/u/0/project/art-matrix/firestore/databases/-default-/data/~2Fdetails~2FR10C1-r1c1?utm_source=email&utm_medium=newsletter&utm_campaign=firebase-welcome
-
 公開URL: "https://cf268321.cloudfree.jp/art_matrix/
+
+DB: https://console.firebase.google.com/u/0/project/art-matrix/firestore/databases/-default-/data/~2Fdetails~2FR10C1-r1c1
 
 公開時のFTPへは、 npm run build済みの　/cf268321.cloudfree.jp/public_html/art_matrix/dist/ フォルダだけを上書きすればOKです。
 

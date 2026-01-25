@@ -61,6 +61,7 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
 
   React.useEffect(() => {
     let mounted = true
+    // 各親セルの無効状態を取得
     const load = async () => {
       const next: Record<string, boolean> = {}
       const promises: Promise<void>[] = []
@@ -90,11 +91,13 @@ export default function MatrixGrid({ onNavigateToDetail }: Props) {
     return () => { mounted = false }
   }, [])
 
+  // モーダルを開く
   function openModal(r: number, c: number) {
     setActiveCell({ r, c })
     setModalOpen(true)
   }
 
+  // ヘッダーの固定スタイル（モーダルオープン時は不透明化）
   const headerStickyWhenModal = modalOpen
     ? { ...stickyHeaderStyle, opacity: 1.0 }
     : stickyHeaderStyle

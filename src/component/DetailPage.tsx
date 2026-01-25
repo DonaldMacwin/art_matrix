@@ -60,12 +60,14 @@ export default function DetailPage({ id, onBack }: Props) {
 
     const pad2 = (n: number) => (n < 10 ? `0${n}` : `${n}`)
 
+    // 指定された親IDに基づいて、そのカテゴリ内の全アイテムを取得する
     const fetchCategoryItems = async (parentRaw: string) => {
       const m = parentRaw.match(/^R0?(\d+)C0?(\d+)/i)
       const parentRow = m ? Number(m[1]) : null
       const parentCol = m ? Number(m[2]) : null
       const results: ({ id: string } & DetailData)[] = []
 
+      // 4x4 のグリッドを想定
       for (let rr = 1; rr <= 4; rr++) {
         for (let cc = 1; cc <= 4; cc++) {
           const candidates = new Set<string>()
@@ -76,6 +78,7 @@ export default function DetailPage({ id, onBack }: Props) {
             candidates.add(`R${pad2(parentRow)}C${pad2(parentCol)}-r0${rr}c0${cc}`)
           }
 
+          // 候補の中から最初に見つかったドキュメントを使う
           let found: { id: string } & DetailData | null = null
           for (const cand of candidates) {
             try {
@@ -96,6 +99,7 @@ export default function DetailPage({ id, onBack }: Props) {
       return results
     }
 
+    // データ取得処理
     const fetchData = async () => {
       setLoading(true)
       setNotFound(false)
@@ -123,6 +127,7 @@ export default function DetailPage({ id, onBack }: Props) {
             setSnapshotExists(true)
           }
         } else {
+          // 個別アイテムパターン
           const ref = doc(db, 'details', id)
           const snap = await getDoc(ref)
           //console.log('[DetailPage] fetch id=', id, 'exists=', snap.exists(), 'data=', snap.exists() ? snap.data() : null)
@@ -133,6 +138,7 @@ export default function DetailPage({ id, onBack }: Props) {
             const list = await fetchCategoryItems(parentPrefix)
             if (!mounted) return
             const filteredList = (list ?? []).filter(it => it.imageUrl && it.imageUrl !== 'no_URL')
+            // 指定IDまたはそのサフィックスにマッチするアイテムを取得リストから探す
             if (filteredList && filteredList.length > 0) {
               const suffix = id.includes('-') ? id.split('-').slice(1).join('-') : ''
               const idx = filteredList.findIndex(it => it.id === id || (suffix && it.id.endsWith(suffix)))
@@ -179,6 +185,7 @@ export default function DetailPage({ id, onBack }: Props) {
   }, [id])
 
   useEffect(() => {
+    // ホイール・タッチ操作によるスクロール制御
     const canScrollVertically = (el: HTMLElement | null, delta: number) => {
       if (!el) return false
       return delta > 0
@@ -222,6 +229,7 @@ export default function DetailPage({ id, onBack }: Props) {
         }, FADE_MS)
       }
 
+      // スクロール方向に応じてインデックスを変更
       if (delta > 0) {
         const next = Math.min(itemsRef.current.length - 1, currentIndexRef.current + 1)
         if (next !== currentIndexRef.current) doIndexChange(next)
@@ -232,6 +240,7 @@ export default function DetailPage({ id, onBack }: Props) {
       ev.preventDefault()
     }
 
+    // タッチ操作用
     let touchStartYLocal: number | null = null
     const touchStart = (ev: TouchEvent) => { touchStartYLocal = ev.touches[0]?.clientY ?? null }
     const touchMove = (ev: TouchEvent) => {
@@ -285,7 +294,7 @@ export default function DetailPage({ id, onBack }: Props) {
       document.removeEventListener('touchstart', touchStart as EventListener)
       document.removeEventListener('touchmove', touchMove as EventListener)
     }
-  }, []) // handlers read latest via refs
+  }, [])
 
   return (
     <div className="detail-container">

@@ -142,7 +142,6 @@ h1{
   pointer-events: none !important;
 }
 
-/* hover 時の青化を完全に無効化 */
 .neumorph-btn[disabled]:hover,
 .neumorph-btn:disabled:hover {
   background: #ffffff !important;
